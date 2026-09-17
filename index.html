@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Protocolo de LOGIGHO S.A.S. para prevenir, atender y corregir el acoso laboral y sexual: canales de denuncia, ruta con plazos y medidas de protección.">
 <meta name="theme-color" content="#a0125a">
+<meta property="og:title" content="Protocolo de acoso laboral y sexual · LOGIGHO">
+<meta property="og:description" content="Canales de denuncia confidenciales, ruta de atención con plazos y medidas de protección.">
+<meta property="og:image" content="https://juanjo-geo.github.io/protocolo-acoso-logigho/img/portada-sm.jpg">
+<link rel="preload" as="image" href="img/portada-sm.jpg" media="(max-width:919px)">
+<link rel="preload" as="image" href="img/portada-lg.jpg" media="(min-width:920px)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%92%9C%3C/text%3E%3C/svg%3E">
 <title>Protocolo de Acoso LOGIGHO</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,9 +87,22 @@ a{color:var(--fucsia-deep);text-decoration-thickness:1px;text-underline-offset:2
 /* ---------------- Portada ---------------- */
 .hero{position:relative;overflow:hidden;color:var(--hero-ink);
   background:linear-gradient(125deg,var(--hero-a) 0%,var(--hero-b) 48%,var(--hero-c) 80%,var(--hero-d) 118%)}
-.hero .wrap{display:grid;gap:1.5rem;align-items:end}
-@media(min-width:920px){.hero .wrap{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}}
-.hero-txt{padding-block:3.6rem 3rem}
+.hero .wrap{position:relative;z-index:2}
+.hero-txt{padding-block:2rem 2.8rem;max-width:40rem}
+@media(min-width:920px){.hero-txt{padding-block:4rem 3.4rem;max-width:min(52%,40rem)}}
+.hero-photo{position:relative;height:clamp(200px,56vw,320px);overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+.hero-photo::after{content:"";position:absolute;inset:auto 0 0 0;height:55%;
+  background:linear-gradient(to bottom,transparent,var(--hero-a))}
+@media(min-width:920px){
+  .hero-photo{position:absolute;top:0;right:0;bottom:0;width:50%;height:auto}
+  .hero-photo img{object-position:50% 18%}
+  .hero-photo::after{inset:0 auto 0 0;width:45%;height:auto;
+    background:linear-gradient(to right,color-mix(in srgb,var(--hero-b) 92%,var(--hero-a)),transparent)}
+}
+.foto-credito{position:absolute;right:.7rem;bottom:.55rem;z-index:3;font-size:.64rem;font-weight:600;color:rgba(255,255,255,.78);
+  text-decoration:none;background:rgba(42,6,25,.35);padding:.15rem .5rem;border-radius:999px}
+.foto-credito:hover{color:#fff}
 .logo-chip{display:inline-flex;align-items:center;gap:.55rem;background:rgba(255,255,255,.96);border-radius:999px;
   padding:.4rem .85rem .4rem .45rem;font-weight:800;font-size:.78rem;letter-spacing:.02em;color:#2a1422}
 .logo-chip b{display:grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:50%;
@@ -106,16 +124,13 @@ a{color:var(--fucsia-deep);text-decoration-thickness:1px;text-underline-offset:2
 .meta{display:flex;flex-wrap:wrap;gap:1.2rem 2rem;margin-top:2.2rem;padding-top:1.3rem;border-top:1px solid var(--hero-line)}
 .meta dt{font-size:.62rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--hero-soft);opacity:.85}
 .meta dd{margin:.2rem 0 0;font-weight:700;font-size:.92rem}
-.hero-art{align-self:end;display:flex;justify-content:center}
-.hero-art svg{width:100%;max-width:520px;height:auto;display:block}
-@media(max-width:919px){.hero-txt{padding-bottom:.5rem}.hero-art svg{max-width:360px}}
 
 /* ---------------- Barra superior ---------------- */
 .topbar{position:sticky;top:var(--safe-top);z-index:50;border-bottom:1px solid var(--line);
   background:color-mix(in srgb,var(--ground) 90%,transparent);backdrop-filter:blur(12px)}
 .topbar .wrap{display:flex;align-items:center;gap:.9rem;height:4.1rem}
 .brand{display:flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--ink);font-weight:800;font-size:.92rem;flex:none}
-.brand svg{width:15px;height:30px;color:var(--fucsia)}
+.brand svg{width:22px;height:22px;color:var(--fucsia)}
 .brand span{display:none}
 @media(min-width:600px){.brand span{display:block}}
 .search{position:relative;flex:1;max-width:30rem;margin-left:auto}
@@ -176,9 +191,6 @@ h2.t em{font-style:italic;color:var(--g,var(--fucsia))}
 .ayuda{margin-top:2.6rem;border-radius:var(--radius);background:var(--surface);border:1.5px solid var(--line-strong);
   box-shadow:var(--shadow);padding:2rem;position:relative;overflow:hidden}
 @media(min-width:700px){.ayuda{padding:2.4rem 2.6rem}}
-.ayuda-head{display:flex;justify-content:space-between;gap:1rem;align-items:flex-end}
-.ayuda-head svg{flex:none;width:92px;height:auto;display:none}
-@media(min-width:560px){.ayuda-head svg{display:block}}
 .canales{display:grid;gap:.9rem;margin-top:1.6rem;grid-template-columns:repeat(auto-fit,minmax(14.5rem,1fr))}
 .canal{display:flex;flex-direction:column;gap:.45rem;padding:1.2rem 1.25rem;border-radius:var(--radius-sm);background:var(--surface-2)}
 .canal .ic{width:2.3rem;height:2.3rem;border-radius:50%;display:grid;place-items:center;background:var(--g-wash);color:var(--g-deep)}
@@ -291,7 +303,6 @@ td:first-child{font-weight:800;color:var(--ink);white-space:nowrap}
 /* ---------------- Cierre ---------------- */
 .pie{margin-top:4rem;background:linear-gradient(125deg,var(--hero-a),var(--hero-b) 70%,var(--hero-c));color:var(--hero-ink);overflow:hidden}
 .pie .wrap{display:grid;gap:1.6rem;padding-block:2.8rem 0;align-items:end}
-@media(min-width:820px){.pie .wrap{grid-template-columns:1fr auto}}
 .pie h2{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.3rem);line-height:1.1;max-width:22ch}
 .pie h2 em{font-style:italic;color:#ffd0e6}
 .pie dl{display:flex;flex-wrap:wrap;gap:1rem 2.2rem;margin:1.5rem 0 0}
@@ -299,8 +310,6 @@ td:first-child{font-weight:800;color:var(--ink);white-space:nowrap}
 .pie dd{margin:.2rem 0 0;font-weight:700;font-size:.9rem}
 .pie dd a{color:#fff}
 .pie .legal{font-size:.78rem;color:var(--hero-soft);max-width:64ch;margin-top:1.6rem;padding-bottom:2.6rem;line-height:1.55}
-.pie-art svg{display:block;width:230px;height:auto}
-@media(max-width:819px){.pie-art{display:none}}
 
 /* ---------------- Flotantes ---------------- */
 .flot{position:fixed;right:1rem;bottom:calc(1rem + var(--safe-bottom));z-index:55;display:flex;flex-direction:column;align-items:flex-end;gap:.55rem}
@@ -312,51 +321,19 @@ td:first-child{font-weight:800;color:var(--ink);white-space:nowrap}
 #topBtn svg{width:1.05rem;height:1.05rem}
 </style>
 
-<!-- Siluetas: una sola definición, se reutilizan con <use> -->
 
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <defs>
-    <symbol id="m-largo" viewBox="0 0 120 260">
-      <path d="M34 58C30 20 90 20 86 58L93 130C76 141 44 141 27 130Z"/>
-      <circle cx="60" cy="52" r="22"/>
-      <rect x="52" y="68" width="16" height="18" rx="6"/>
-      <path d="M60 82C38 82 26 93 24 117L12 260H108L96 117C94 93 82 82 60 82Z"/>
-    </symbol>
-    <symbol id="m-mono" viewBox="0 0 120 260">
-      <circle cx="60" cy="21" r="13"/>
-      <circle cx="60" cy="50" r="21"/>
-      <rect x="52" y="66" width="16" height="18" rx="6"/>
-      <path d="M60 80C40 80 30 91 28 113L25 260H95L92 113C90 91 80 80 60 80Z"/>
-    </symbol>
-    <symbol id="m-cola" viewBox="0 0 120 260">
-      <path d="M72 36C100 38 108 76 94 110C89 88 82 68 68 58Z"/>
-      <path d="M38 50C38 24 82 24 82 50C82 38 72 32 60 32C48 32 38 38 38 50Z"/>
-      <circle cx="60" cy="52" r="21"/>
-      <rect x="52" y="68" width="16" height="18" rx="6"/>
-      <path d="M60 82C40 82 30 94 28 118L6 260H114L92 118C90 94 80 82 60 82Z"/>
-    </symbol>
-    <symbol id="m-corto" viewBox="0 0 120 260">
-      <path d="M35 56C33 24 87 24 85 56L87 81C70 88 50 88 33 81Z"/>
-      <circle cx="60" cy="54" r="21"/>
-      <rect x="52" y="70" width="16" height="18" rx="6"/>
-      <path d="M60 84C42 84 32 94 30 116L20 260H100L90 116C88 94 78 84 60 84Z"/>
-    </symbol>
-    <symbol id="m-rizos" viewBox="0 0 120 260">
-      <circle cx="60" cy="48" r="31"/>
-      <circle cx="35" cy="39" r="14"/><circle cx="85" cy="39" r="14"/>
-      <circle cx="47" cy="20" r="13"/><circle cx="73" cy="20" r="13"/>
-      <circle cx="30" cy="62" r="11"/><circle cx="90" cy="62" r="11"/>
-      <rect x="52" y="72" width="16" height="16" rx="6"/>
-      <path d="M60 84C40 84 28 95 26 119L16 260H104L94 119C92 95 80 84 60 84Z"/>
-    </symbol>
-  </defs>
-</svg>
-
 <div id="bar"></div>
 
 <header class="hero">
+  <div class="hero-photo">
+    <picture>
+      <source media="(min-width:920px)" srcset="img/portada-lg.jpg" width="1000" height="1125">
+      <img src="img/portada-sm.jpg" width="900" height="675" alt="Siete mujeres sonriendo juntas, sentadas en unas escaleras">
+    </picture>
+    <a class="foto-credito" href="https://unsplash.com/photos/group-of-women-on-painted-stairs-KodMXENNaas" target="_blank" rel="noopener">Foto: Joel Muniz · Unsplash</a>
+  </div>
   <div class="wrap">
     <div class="hero-txt">
       <span class="logo-chip"><b>L</b>LOGIGHO S.A.S.</span>
@@ -373,21 +350,12 @@ td:first-child{font-weight:800;color:var(--ink);white-space:nowrap}
         <div><dt>Norma base</dt><dd>Ley 2365 de 2024</dd></div>
       </dl>
     </div>
-    <div class="hero-art" aria-hidden="true">
-      <svg viewBox="0 0 520 300" preserveAspectRatio="xMidYMax meet">
-        <use href="#m-rizos" x="4"   y="50" width="115" height="250" fill="var(--sil-3)" fill-opacity=".72"/>
-        <use href="#m-corto" x="392" y="46" width="117" height="254" fill="var(--sil-3)" fill-opacity=".72"/>
-        <use href="#m-mono"  x="96"  y="14" width="132" height="286" fill="var(--sil-1)" fill-opacity=".9"/>
-        <use href="#m-cola"  x="290" y="22" width="129" height="278" fill="var(--sil-1)" fill-opacity=".9"/>
-        <use href="#m-largo" x="194" y="30" width="125" height="270" fill="var(--sil-2)"/>
-      </svg>
-    </div>
   </div>
 </header>
 
 <div class="topbar">
   <div class="wrap">
-    <a class="brand" href="#inicio"><svg viewBox="0 0 120 260" aria-hidden="true"><use href="#m-largo" fill="currentColor"/></svg><span>Protocolo de acoso · LOGIGHO</span></a>
+    <a class="brand" href="#inicio"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-9.5-9.2C1 8.3 3.2 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.7 0 5.9 3.8 4.4 7.3C19.5 16.4 12 21 12 21Z"/></svg><span>Protocolo de acoso · LOGIGHO</span></a>
     <div class="search">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="q" type="search" placeholder="Buscar: represalias, plazos, WhatsApp…" aria-label="Buscar en el protocolo" autocomplete="off">
@@ -476,17 +444,11 @@ td:first-child{font-weight:800;color:var(--ink);white-space:nowrap}
 
 <section class="top g-f" id="ayuda">
   <div class="ayuda">
-    <div class="ayuda-head">
-      <div>
+    <div>
         <span class="kicker">Canales de queja · secciones 17 y 23</span>
         <h2 class="t">Pide ayuda. <em>Tú eliges</em> el canal.</h2>
         <p class="lead">Los tres canales son confidenciales. Usa el que te resulte más seguro; también puedes acudir directamente a Gerencia.</p>
       </div>
-      <svg viewBox="0 0 200 260" aria-hidden="true">
-        <use href="#m-cola" x="-2" y="18" width="112" height="242" fill="var(--sil-1)"/>
-        <use href="#m-largo" x="78" y="0" width="120" height="260" fill="var(--fucsia)"/>
-      </svg>
-    </div>
 
     <div class="canales">
       <div class="canal g-f">
@@ -981,15 +943,7 @@ td:first-child{font-weight:800;color:var(--ink);white-space:nowrap}
         <div><dt>Correo</dt><dd><a href="mailto:logigho.gerencia@gmail.com">logigho.gerencia@gmail.com</a></dd></div>
         <div><dt>Documento</dt><dd class="mono">PT-SGSST-04 · v01</dd></div>
       </dl>
-      <p class="legal">Versión web del Protocolo para la Prevención, Atención y Corrección del Acoso Laboral y Sexual de LOGIGHO S.A.S., Sistema de Gestión de Seguridad y Salud en el Trabajo. El texto de las secciones reproduce el documento aprobado; el índice, el buscador, los botones de contacto y la tabla comparativa de comités son ayudas de lectura añadidas en esta edición y no modifican el protocolo.</p>
-    </div>
-    <div class="pie-art" aria-hidden="true">
-      <svg viewBox="0 0 250 200" preserveAspectRatio="xMidYMax meet">
-        <use href="#m-corto" x="0"   y="34" width="76" height="166" fill="var(--sil-3)" fill-opacity=".6"/>
-        <use href="#m-rizos" x="160" y="30" width="78" height="170" fill="var(--sil-3)" fill-opacity=".6"/>
-        <use href="#m-mono"  x="52"  y="6"  width="89" height="194" fill="var(--sil-1)" fill-opacity=".85"/>
-        <use href="#m-cola"  x="108" y="14" width="86" height="186" fill="var(--sil-2)"/>
-      </svg>
+      <p class="legal">Versión web del Protocolo para la Prevención, Atención y Corrección del Acoso Laboral y Sexual de LOGIGHO S.A.S., Sistema de Gestión de Seguridad y Salud en el Trabajo. El texto de las secciones reproduce el documento aprobado; el índice, el buscador, los botones de contacto y la tabla comparativa de comités son ayudas de lectura añadidas en esta edición y no modifican el protocolo. Fotografía de portada: Joel Muniz en Unsplash, bajo la Licencia Unsplash.</p>
     </div>
   </div>
 </footer>
