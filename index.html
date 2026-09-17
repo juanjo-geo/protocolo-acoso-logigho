@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Protocolo de LOGIGHO S.A.S. para prevenir, atender y corregir el acoso laboral y sexual: canales de denuncia, ruta con plazos y medidas de protección.">
+<meta name="theme-color" content="#a0125a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%92%9C%3C/text%3E%3C/svg%3E">
+<title>Protocolo de Acoso LOGIGHO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --ground:#fff7fb; --surface:#ffffff; --surface-2:#fdeef5; --surface-3:#fbe1ee;
+  --ink:#2a1422; --ink-2:#4e2c40; --ink-soft:#86617a;
+  --line:#f3d9e6; --line-strong:#e7bfd3;
+  --fucsia:#e0197d; --fucsia-deep:#ad1260; --fucsia-wash:#fde4f0;
+  --violeta:#8a3fb8; --violeta-deep:#6d2c96; --violeta-wash:#f1e6fa;
+  --coral:#f0654a; --coral-deep:#b0402a; --coral-wash:#fde9e4;
+  --btn:#c8156f; --on-btn:#ffffff;
+  --hero-a:#4a0b31; --hero-b:#a0125a; --hero-c:#e0197d; --hero-d:#f0654a;
+  --hero-ink:#fff4f9; --hero-soft:#ffd6e9; --hero-line:rgba(255,255,255,.22);
+  --sil-1:#ffc2de; --sil-2:#ff8fc2; --sil-3:#ffe3ef;
+  --shadow:0 1px 2px rgba(74,11,49,.05), 0 16px 36px -20px rgba(74,11,49,.28);
+  --shadow-sm:0 1px 2px rgba(74,11,49,.07);
+  --radius:18px; --radius-sm:12px;
+  --safe-top:env(safe-area-inset-top,0px); --safe-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#160b14; --surface:#211220; --surface-2:#2b1729; --surface-3:#351d32;
+    --ink:#fbeaf3; --ink-2:#ecc9dc; --ink-soft:#b791a8;
+    --line:#3a2236; --line-strong:#523049;
+    --fucsia:#ff4fa3; --fucsia-deep:#ff8cc4; --fucsia-wash:#3d1330;
+    --violeta:#b57be0; --violeta-deep:#d4aef1; --violeta-wash:#2c1a3d;
+    --coral:#ff8468; --coral-deep:#ffab96; --coral-wash:#3a1c18;
+    --btn:#ff4fa3; --on-btn:#2a0619;
+    --hero-a:#2a0619; --hero-b:#6e0c3f; --hero-c:#b0135f; --hero-d:#c9503b;
+    --hero-ink:#fff4f9; --hero-soft:#f6c0da; --hero-line:rgba(255,255,255,.16);
+    --sil-1:#ff9fcb; --sil-2:#e86aa6; --sil-3:#ffc8e0;
+    --shadow:0 1px 2px rgba(0,0,0,.45), 0 18px 40px -22px rgba(0,0,0,.85);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.5);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#160b14; --surface:#211220; --surface-2:#2b1729; --surface-3:#351d32;
+  --ink:#fbeaf3; --ink-2:#ecc9dc; --ink-soft:#b791a8;
+  --line:#3a2236; --line-strong:#523049;
+  --fucsia:#ff4fa3; --fucsia-deep:#ff8cc4; --fucsia-wash:#3d1330;
+  --violeta:#b57be0; --violeta-deep:#d4aef1; --violeta-wash:#2c1a3d;
+  --coral:#ff8468; --coral-deep:#ffab96; --coral-wash:#3a1c18;
+  --btn:#ff4fa3; --on-btn:#2a0619;
+  --hero-a:#2a0619; --hero-b:#6e0c3f; --hero-c:#b0135f; --hero-d:#c9503b;
+  --hero-ink:#fff4f9; --hero-soft:#f6c0da; --hero-line:rgba(255,255,255,.16);
+  --sil-1:#ff9fcb; --sil-2:#e86aa6; --sil-3:#ffc8e0;
+  --shadow:0 1px 2px rgba(0,0,0,.45), 0 18px 40px -22px rgba(0,0,0,.85);
+  --shadow-sm:0 1px 2px rgba(0,0,0,.5);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(5.5rem + var(--safe-top))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition-duration:.01ms !important}}
+body{margin:0;background:var(--ground);color:var(--ink);
+  font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;text-wrap:balance}
+p{margin:0}
+a{color:var(--fucsia-deep);text-decoration-thickness:1px;text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--fucsia);outline-offset:3px;border-radius:6px}
+.wrap{max-width:78rem;margin:0 auto;padding-inline:1.5rem}
+.mono{font-family:"JetBrains Mono",ui-monospace,Consolas,monospace;font-variant-numeric:tabular-nums}
+.serif{font-family:"Instrument Serif","Georgia","Times New Roman",serif;font-weight:400}
+
+/* grupos de color: encodan la parte del protocolo */
+.g-f{--g:var(--fucsia);--g-deep:var(--fucsia-deep);--g-wash:var(--fucsia-wash)}
+.g-c{--g:var(--coral);--g-deep:var(--coral-deep);--g-wash:var(--coral-wash)}
+.g-v{--g:var(--violeta);--g-deep:var(--violeta-deep);--g-wash:var(--violeta-wash)}
+
+#bar{position:fixed;top:0;left:0;height:3px;width:0;z-index:70;
+  background:linear-gradient(90deg,var(--violeta),var(--fucsia),var(--coral))}
+
+/* ---------------- Portada ---------------- */
+.hero{position:relative;overflow:hidden;color:var(--hero-ink);
+  background:linear-gradient(125deg,var(--hero-a) 0%,var(--hero-b) 48%,var(--hero-c) 80%,var(--hero-d) 118%)}
+.hero .wrap{display:grid;gap:1.5rem;align-items:end}
+@media(min-width:920px){.hero .wrap{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}}
+.hero-txt{padding-block:3.6rem 3rem}
+.logo-chip{display:inline-flex;align-items:center;gap:.55rem;background:rgba(255,255,255,.96);border-radius:999px;
+  padding:.4rem .85rem .4rem .45rem;font-weight:800;font-size:.78rem;letter-spacing:.02em;color:#2a1422}
+.logo-chip b{display:grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:50%;
+  background:linear-gradient(135deg,#e8354f,#f47a3a);color:#fff;font-size:.72rem}
+.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--hero-soft);margin:1.6rem 0 .7rem}
+.hero h1{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(2.5rem,6.2vw,4.5rem);
+  line-height:1;letter-spacing:-.01em;max-width:15ch}
+.hero h1 em{font-style:italic;color:#ffd0e6}
+.hero .sub{color:var(--hero-soft);font-size:1.05rem;max-width:52ch;margin-top:1.2rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem}
+.b{display:inline-flex;align-items:center;gap:.5rem;font:inherit;font-weight:800;font-size:.92rem;border-radius:999px;
+  padding:.72rem 1.2rem;text-decoration:none;cursor:pointer;border:1.5px solid transparent;transition:transform .15s}
+.b:hover{transform:translateY(-1px)}
+.b svg{width:1.05rem;height:1.05rem;flex:none}
+.b-light{background:#fff;color:#a0125a}
+.b-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.b-main{background:var(--btn);color:var(--on-btn)}
+.b-soft{background:var(--surface);color:var(--g-deep,var(--fucsia-deep));border-color:var(--line-strong)}
+.meta{display:flex;flex-wrap:wrap;gap:1.2rem 2rem;margin-top:2.2rem;padding-top:1.3rem;border-top:1px solid var(--hero-line)}
+.meta dt{font-size:.62rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--hero-soft);opacity:.85}
+.meta dd{margin:.2rem 0 0;font-weight:700;font-size:.92rem}
+.hero-art{align-self:end;display:flex;justify-content:center}
+.hero-art svg{width:100%;max-width:520px;height:auto;display:block}
+@media(max-width:919px){.hero-txt{padding-bottom:.5rem}.hero-art svg{max-width:360px}}
+
+/* ---------------- Barra superior ---------------- */
+.topbar{position:sticky;top:var(--safe-top);z-index:50;border-bottom:1px solid var(--line);
+  background:color-mix(in srgb,var(--ground) 90%,transparent);backdrop-filter:blur(12px)}
+.topbar .wrap{display:flex;align-items:center;gap:.9rem;height:4.1rem}
+.brand{display:flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--ink);font-weight:800;font-size:.92rem;flex:none}
+.brand svg{width:15px;height:30px;color:var(--fucsia)}
+.brand span{display:none}
+@media(min-width:600px){.brand span{display:block}}
+.search{position:relative;flex:1;max-width:30rem;margin-left:auto}
+.search svg{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);width:1rem;height:1rem;color:var(--ink-soft);pointer-events:none}
+.search input{width:100%;font:inherit;font-size:.92rem;color:var(--ink);background:var(--surface);
+  border:1.5px solid var(--line-strong);border-radius:999px;padding:.6rem .9rem .6rem 2.35rem}
+.search input::placeholder{color:var(--ink-soft)}
+.search input:focus{outline:none;border-color:var(--fucsia);box-shadow:0 0 0 4px var(--fucsia-wash)}
+.btn-idx{flex:none;font:inherit;font-weight:800;font-size:.84rem;color:var(--ink);background:var(--surface);
+  border:1.5px solid var(--line-strong);border-radius:999px;padding:.52rem .95rem;cursor:pointer}
+@media(min-width:1080px){.btn-idx{display:none}}
+#count{display:none;position:sticky;top:calc(4.1rem + var(--safe-top));z-index:40;background:var(--fucsia-wash);
+  border-bottom:1px solid var(--line);padding-block:.55rem;font-size:.86rem;font-weight:700;color:var(--fucsia-deep)}
+#count.show{display:block}
+#count .wrap{display:flex;gap:1rem;align-items:center}
+#count button{margin-left:auto;font:inherit;font-size:.82rem;font-weight:800;background:none;border:0;color:inherit;text-decoration:underline;cursor:pointer}
+mark{background:var(--sil-1);color:var(--ink);border-radius:3px;padding:0 .1em}
+.hide{display:none !important}
+
+/* ---------------- Estructura ---------------- */
+@media(min-width:1080px){.shell{display:grid;grid-template-columns:16.5rem minmax(0,1fr);gap:3rem;align-items:start}}
+main{min-width:0}
+.rail{display:none}
+@media(min-width:1080px){.rail{display:block;position:sticky;top:calc(4.1rem + var(--safe-top));
+  max-height:calc(100vh - 4.1rem - var(--safe-top));overflow-y:auto;padding-block:2.2rem 3rem;scrollbar-width:thin}}
+.rail.open{display:block;position:fixed;inset:calc(4.1rem + var(--safe-top)) 0 0;z-index:45;background:var(--ground);
+  overflow-y:auto;padding:1.4rem 1.5rem calc(5rem + var(--safe-bottom))}
+.toc{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.05rem}
+.toc .th{display:flex;align-items:center;gap:.45rem;margin:1.1rem 0 .3rem;padding-left:.6rem;font-size:.62rem;font-weight:800;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--ink-soft)}
+.toc .th:first-child{margin-top:0}
+.toc .th i{width:.5rem;height:.5rem;border-radius:50%;background:var(--g)}
+.toc a{display:flex;gap:.55rem;align-items:baseline;padding:.28rem .6rem;border-radius:9px;text-decoration:none;
+  font-size:.83rem;font-weight:600;color:var(--ink-2);line-height:1.35;border-left:2px solid transparent}
+.toc a:hover{background:var(--surface-2);color:var(--ink)}
+.toc a.on{background:var(--g-wash,var(--fucsia-wash));color:var(--g-deep,var(--fucsia-deep));border-left-color:var(--g,var(--fucsia))}
+.toc .n{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.68rem;font-weight:600;color:var(--ink-soft);min-width:1.4rem;flex:none}
+.toc a.on .n{color:var(--g,var(--fucsia))}
+
+/* ---------------- Secciones de apertura ---------------- */
+.top{padding-block:3rem 0}
+.kicker{display:block;font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--g-deep,var(--fucsia-deep));margin-bottom:.35rem}
+h2.t{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(2rem,4vw,2.8rem);line-height:1.05;letter-spacing:-.01em}
+h2.t em{font-style:italic;color:var(--g,var(--fucsia))}
+.lead{color:var(--ink-soft);max-width:62ch;margin-top:.6rem}
+
+/* Tolerancia cero */
+.cero{display:grid;gap:1.2rem 2rem;align-items:center;padding:2rem;border-radius:var(--radius);
+  background:linear-gradient(135deg,var(--fucsia-wash),var(--violeta-wash));}
+@media(min-width:700px){.cero{grid-template-columns:auto 1fr;padding:2.4rem 2.6rem}}
+.cero-0{font-family:"Instrument Serif",Georgia,serif;font-size:clamp(7rem,17vw,11rem);line-height:.78;color:var(--fucsia);
+  background:linear-gradient(160deg,var(--violeta),var(--fucsia) 55%,var(--coral));-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;padding-inline:.05em}
+.cero p{margin-top:.7rem;color:var(--ink-2);max-width:62ch}
+.cero strong{color:var(--fucsia-deep)}
+
+/* Pide ayuda */
+.ayuda{margin-top:2.6rem;border-radius:var(--radius);background:var(--surface);border:1.5px solid var(--line-strong);
+  box-shadow:var(--shadow);padding:2rem;position:relative;overflow:hidden}
+@media(min-width:700px){.ayuda{padding:2.4rem 2.6rem}}
+.ayuda-head{display:flex;justify-content:space-between;gap:1rem;align-items:flex-end}
+.ayuda-head svg{flex:none;width:92px;height:auto;display:none}
+@media(min-width:560px){.ayuda-head svg{display:block}}
+.canales{display:grid;gap:.9rem;margin-top:1.6rem;grid-template-columns:repeat(auto-fit,minmax(14.5rem,1fr))}
+.canal{display:flex;flex-direction:column;gap:.45rem;padding:1.2rem 1.25rem;border-radius:var(--radius-sm);background:var(--surface-2)}
+.canal .ic{width:2.3rem;height:2.3rem;border-radius:50%;display:grid;place-items:center;background:var(--g-wash);color:var(--g-deep)}
+.canal .ic svg{width:1.15rem;height:1.15rem}
+.canal h3{font-size:1rem;font-weight:800;margin-top:.2rem}
+.canal p{font-size:.88rem;color:var(--ink-2);line-height:1.5}
+.canal .b{align-self:flex-start;margin-top:.35rem;padding:.55rem 1rem;font-size:.85rem}
+.canal .mail{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.82rem;font-weight:600;color:var(--g-deep);word-break:break-all}
+.lineas-t{display:flex;align-items:baseline;flex-wrap:wrap;gap:.3rem .8rem;margin-top:2rem}
+.lineas-t h3{font-size:1rem;font-weight:800}
+.lineas-t p{font-size:.86rem;color:var(--ink-soft)}
+.lineas{display:grid;gap:.7rem;margin-top:.9rem;grid-template-columns:repeat(auto-fit,minmax(12.5rem,1fr))}
+.linea{display:flex;align-items:center;gap:.85rem;padding:.8rem 1rem;border-radius:var(--radius-sm);text-decoration:none;color:var(--ink);
+  border:1.5px solid var(--line-strong);background:var(--surface);transition:border-color .15s,background .15s}
+.linea:hover{border-color:var(--g);background:var(--g-wash)}
+.linea .num{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:1.45rem;font-weight:600;color:var(--g-deep);line-height:1;min-width:2.6rem}
+.linea b{display:block;font-size:.88rem;font-weight:800;line-height:1.25}
+.linea span{display:block;font-size:.76rem;color:var(--ink-soft);line-height:1.35}
+.otras{font-size:.86rem;color:var(--ink-2);margin-top:.9rem}
+.garantias{display:grid;gap:.6rem;margin-top:1.8rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.gar{display:flex;gap:.65rem;align-items:flex-start;padding:.8rem .95rem;border-radius:var(--radius-sm);background:var(--fucsia-wash);
+  text-decoration:none;color:var(--ink);font-size:.88rem;font-weight:700;line-height:1.4}
+.gar svg{flex:none;width:1.1rem;height:1.1rem;color:var(--fucsia-deep);margin-top:.1rem}
+.gar small{display:block;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.68rem;font-weight:600;color:var(--fucsia-deep);margin-top:.15rem}
+
+/* Mapa */
+.mapa{display:grid;gap:.9rem;margin-top:1.6rem;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr))}
+.parte{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:1.15rem 1.2rem}
+.parte-h{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink)}
+.parte-h i{flex:none;width:.7rem;height:.7rem;border-radius:50%;background:var(--g)}
+.parte-h b{font-size:.95rem;font-weight:800}
+.parte-h span{margin-left:auto;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.68rem;color:var(--ink-soft)}
+.parte ul{list-style:none;margin:.65rem 0 0;padding:0;display:flex;flex-direction:column;gap:.1rem}
+.parte li a{display:flex;gap:.5rem;align-items:baseline;font-size:.83rem;color:var(--ink-2);text-decoration:none;padding:.16rem 0;line-height:1.35}
+.parte li a:hover{color:var(--g-deep)}
+.parte li a .n{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.68rem;font-weight:600;color:var(--g-deep);min-width:1.3rem;flex:none}
+
+/* ---------------- Grupos y secciones ---------------- */
+.grupo{padding-block:3.6rem 0;scroll-margin-top:5rem}
+.grupo-h{display:flex;align-items:flex-start;gap:.9rem;margin-bottom:1.6rem}
+.grupo-h .dot{flex:none;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--g-wash);display:grid;place-items:center;margin-top:.25rem}
+.grupo-h .dot i{width:.8rem;height:.8rem;border-radius:50%;background:var(--g)}
+.blks{display:flex;flex-direction:column;gap:.95rem}
+.blk{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.45rem 1.55rem;box-shadow:var(--shadow-sm);scroll-margin-top:5.5rem}
+@media(max-width:640px){.blk{padding:1.2rem 1.15rem}}
+.blk-h{display:flex;align-items:baseline;gap:.8rem;margin-bottom:.75rem}
+.sn{flex:none;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.74rem;font-weight:600;color:var(--g-deep);
+  background:var(--g-wash);border-radius:7px;padding:.2rem .5rem;text-decoration:none;font-variant-numeric:tabular-nums}
+a.sn:hover{background:var(--g);color:var(--on-btn)}
+.blk h3{font-size:1.06rem;font-weight:800;line-height:1.3}
+.blk>p,.blk li,.blk dd{font-size:.95rem;color:var(--ink-2)}
+.blk>p+p,.blk>p+ul,.blk>ul+p,.blk>p+.note,.blk>.note+p,.blk>ul+.note,.blk>p+dl,.blk>p+.canales,.blk>.canales+p,.blk>p+ol,.blk>ol+p,.blk>p+.pills,.blk>.pills+p{margin-top:.85rem}
+.blk strong{color:var(--ink)}
+.cite{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.8em;color:var(--ink-soft)}
+
+ul.li{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.5rem}
+ul.li li{display:flex;gap:.7rem;align-items:baseline;line-height:1.55}
+ul.li li::before{content:"";flex:none;width:.45rem;height:.45rem;border-radius:50%;background:var(--g);transform:translateY(-.1rem)}
+ul.cols{display:grid;gap:.55rem 1.6rem}
+@media(min-width:760px){ul.cols{grid-template-columns:1fr 1fr}}
+ul.norma li::before{display:none}
+ul.norma li{display:grid;grid-template-columns:minmax(0,1fr);gap:.05rem;padding:.6rem 0;border-top:1px solid var(--line)}
+ul.norma li:first-child{border-top:0;padding-top:0}
+ul.norma .ley{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.8rem;font-weight:600;color:var(--g-deep)}
+
+.pills{display:flex;flex-wrap:wrap;gap:.45rem}
+.pill{font-size:.84rem;font-weight:700;color:var(--g-deep);background:var(--g-wash);border-radius:999px;padding:.34rem .8rem;line-height:1.35}
+
+dl.defs{margin:0;display:grid;gap:0}
+dl.defs div{padding:.85rem 0;border-top:1px solid var(--line);display:grid;gap:.2rem}
+dl.defs div:first-child{border-top:0;padding-top:0}
+dl.defs dt{font-weight:800;color:var(--g-deep);font-size:.95rem}
+dl.defs dd{margin:0;line-height:1.6}
+
+.note{display:flex;gap:.75rem;align-items:flex-start;padding:.95rem 1.1rem;border-radius:var(--radius-sm);background:var(--g-wash)}
+.note svg{flex:none;width:1.1rem;height:1.1rem;color:var(--g-deep);margin-top:.2rem}
+.note p{font-size:.92rem;color:var(--ink);line-height:1.55}
+.note strong{color:var(--g-deep)}
+.link-rit{display:inline-flex;align-items:center;gap:.35rem;font-weight:700;font-size:.88rem;margin-top:.85rem}
+.link-rit svg{width:.9rem;height:.9rem}
+
+/* Ruta con plazos */
+.plazos{display:flex;gap:.7rem;align-items:flex-start;padding:.9rem 1.05rem;border-radius:var(--radius-sm);
+  border:1.5px dashed var(--g);background:var(--g-wash);margin-bottom:1.2rem}
+.plazos b{font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g-deep);flex:none;padding-top:.2rem}
+.plazos p{font-size:.88rem;color:var(--ink-2);line-height:1.5}
+ol.ruta{list-style:none;margin:0;padding:0;position:relative}
+ol.ruta li{position:relative;display:grid;grid-template-columns:2.2rem minmax(0,1fr);gap:.9rem;padding-bottom:1.05rem}
+ol.ruta li:not(:last-child)::before{content:"";position:absolute;left:1.05rem;top:2.1rem;bottom:.1rem;width:2px;
+  background:linear-gradient(var(--g),var(--line-strong))}
+ol.ruta .dot{width:2.2rem;height:2.2rem;border-radius:50%;display:grid;place-items:center;background:var(--g);color:var(--on-btn);
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.78rem;font-weight:600}
+ol.ruta .paso{padding-top:.18rem}
+ol.ruta .plazo{display:inline-block;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.72rem;font-weight:600;
+  color:var(--g-deep);background:var(--g-wash);border-radius:6px;padding:.12rem .45rem;margin-bottom:.25rem}
+ol.ruta .paso p{font-size:.93rem;color:var(--ink-2);line-height:1.5}
+
+/* Tabla comparativa */
+.tabla-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius-sm);margin-top:.9rem}
+table{width:100%;border-collapse:collapse;min-width:38rem;font-size:.88rem}
+th{text-align:left;font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);
+  padding:.8rem 1rem;background:var(--surface-2);border-bottom:1px solid var(--line)}
+th.c-f{color:var(--fucsia-deep)} th.c-v{color:var(--violeta-deep)} th.c-c{color:var(--coral-deep)}
+td{padding:.8rem 1rem;border-bottom:1px solid var(--line);color:var(--ink-2);vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:800;color:var(--ink);white-space:nowrap}
+.si{color:var(--fucsia-deep);font-weight:800}
+.no{color:var(--coral-deep);font-weight:800}
+
+/* ---------------- Cierre ---------------- */
+.pie{margin-top:4rem;background:linear-gradient(125deg,var(--hero-a),var(--hero-b) 70%,var(--hero-c));color:var(--hero-ink);overflow:hidden}
+.pie .wrap{display:grid;gap:1.6rem;padding-block:2.8rem 0;align-items:end}
+@media(min-width:820px){.pie .wrap{grid-template-columns:1fr auto}}
+.pie h2{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.3rem);line-height:1.1;max-width:22ch}
+.pie h2 em{font-style:italic;color:#ffd0e6}
+.pie dl{display:flex;flex-wrap:wrap;gap:1rem 2.2rem;margin:1.5rem 0 0}
+.pie dt{font-size:.62rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--hero-soft);opacity:.85}
+.pie dd{margin:.2rem 0 0;font-weight:700;font-size:.9rem}
+.pie dd a{color:#fff}
+.pie .legal{font-size:.78rem;color:var(--hero-soft);max-width:64ch;margin-top:1.6rem;padding-bottom:2.6rem;line-height:1.55}
+.pie-art svg{display:block;width:230px;height:auto}
+@media(max-width:819px){.pie-art{display:none}}
+
+/* ---------------- Flotantes ---------------- */
+.flot{position:fixed;right:1rem;bottom:calc(1rem + var(--safe-bottom));z-index:55;display:flex;flex-direction:column;align-items:flex-end;gap:.55rem}
+#ayudaBtn{display:none;box-shadow:var(--shadow)}
+#ayudaBtn.show{display:inline-flex}
+#topBtn{display:none;width:2.7rem;height:2.7rem;border-radius:50%;border:1.5px solid var(--line-strong);background:var(--surface);
+  color:var(--ink);box-shadow:var(--shadow);cursor:pointer;align-items:center;justify-content:center;padding:0}
+#topBtn.show{display:flex}
+#topBtn svg{width:1.05rem;height:1.05rem}
+</style>
+
+<!-- Siluetas: una sola definición, se reutilizan con <use> -->
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="m-largo" viewBox="0 0 120 260">
+      <path d="M34 58C30 20 90 20 86 58L93 130C76 141 44 141 27 130Z"/>
+      <circle cx="60" cy="52" r="22"/>
+      <rect x="52" y="68" width="16" height="18" rx="6"/>
+      <path d="M60 82C38 82 26 93 24 117L12 260H108L96 117C94 93 82 82 60 82Z"/>
+    </symbol>
+    <symbol id="m-mono" viewBox="0 0 120 260">
+      <circle cx="60" cy="21" r="13"/>
+      <circle cx="60" cy="50" r="21"/>
+      <rect x="52" y="66" width="16" height="18" rx="6"/>
+      <path d="M60 80C40 80 30 91 28 113L25 260H95L92 113C90 91 80 80 60 80Z"/>
+    </symbol>
+    <symbol id="m-cola" viewBox="0 0 120 260">
+      <path d="M72 36C100 38 108 76 94 110C89 88 82 68 68 58Z"/>
+      <path d="M38 50C38 24 82 24 82 50C82 38 72 32 60 32C48 32 38 38 38 50Z"/>
+      <circle cx="60" cy="52" r="21"/>
+      <rect x="52" y="68" width="16" height="18" rx="6"/>
+      <path d="M60 82C40 82 30 94 28 118L6 260H114L92 118C90 94 80 82 60 82Z"/>
+    </symbol>
+    <symbol id="m-corto" viewBox="0 0 120 260">
+      <path d="M35 56C33 24 87 24 85 56L87 81C70 88 50 88 33 81Z"/>
+      <circle cx="60" cy="54" r="21"/>
+      <rect x="52" y="70" width="16" height="18" rx="6"/>
+      <path d="M60 84C42 84 32 94 30 116L20 260H100L90 116C88 94 78 84 60 84Z"/>
+    </symbol>
+    <symbol id="m-rizos" viewBox="0 0 120 260">
+      <circle cx="60" cy="48" r="31"/>
+      <circle cx="35" cy="39" r="14"/><circle cx="85" cy="39" r="14"/>
+      <circle cx="47" cy="20" r="13"/><circle cx="73" cy="20" r="13"/>
+      <circle cx="30" cy="62" r="11"/><circle cx="90" cy="62" r="11"/>
+      <rect x="52" y="72" width="16" height="16" rx="6"/>
+      <path d="M60 84C40 84 28 95 26 119L16 260H104L94 119C92 95 80 84 60 84Z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div id="bar"></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-txt">
+      <span class="logo-chip"><b>L</b>LOGIGHO S.A.S.</span>
+      <p class="eyebrow">Protocolo · Sistema de Gestión SST</p>
+      <h1>Prevención, atención y corrección del acoso <em>laboral y sexual</em></h1>
+      <p class="sub">Qué conductas son acoso, cómo reportarlas de forma confidencial, qué plazos tiene la empresa para actuar y cómo te protege mientras tanto.</p>
+      <div class="hero-cta">
+        <a class="b b-light" href="#ayuda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.2C1 8.3 3.2 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.7 0 5.9 3.8 4.4 7.3C19.5 16.4 12 21 12 21Z"/></svg>Pedir ayuda</a>
+        <a class="b b-ghost" href="#s-19">Ver la ruta de atención</a>
+      </div>
+      <dl class="meta">
+        <div><dt>Código</dt><dd class="mono">PT-SGSST-04</dd></div>
+        <div><dt>Versión</dt><dd>01 · septiembre 2026</dd></div>
+        <div><dt>Norma base</dt><dd>Ley 2365 de 2024</dd></div>
+      </dl>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 520 300" preserveAspectRatio="xMidYMax meet">
+        <use href="#m-rizos" x="4"   y="50" width="115" height="250" fill="var(--sil-3)" fill-opacity=".72"/>
+        <use href="#m-corto" x="392" y="46" width="117" height="254" fill="var(--sil-3)" fill-opacity=".72"/>
+        <use href="#m-mono"  x="96"  y="14" width="132" height="286" fill="var(--sil-1)" fill-opacity=".9"/>
+        <use href="#m-cola"  x="290" y="22" width="129" height="278" fill="var(--sil-1)" fill-opacity=".9"/>
+        <use href="#m-largo" x="194" y="30" width="125" height="270" fill="var(--sil-2)"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><svg viewBox="0 0 120 260" aria-hidden="true"><use href="#m-largo" fill="currentColor"/></svg><span>Protocolo de acoso · LOGIGHO</span></a>
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Buscar: represalias, plazos, WhatsApp…" aria-label="Buscar en el protocolo" autocomplete="off">
+    </div>
+    <button class="btn-idx" id="idxBtn" aria-expanded="false" aria-controls="rail">Índice</button>
+  </div>
+</div>
+<div id="count" role="status"><div class="wrap"><span id="countTxt"></span><button id="clearQ" type="button">Limpiar</button></div></div>
+
+<div class="wrap">
+<div class="shell">
+
+<aside class="rail" id="rail" aria-label="Índice del protocolo">
+  <ul class="toc" id="toc">
+    <li class="th g-f"><i></i>Empieza aquí</li>
+    <li class="g-f"><a href="#tolerancia"><span class="n">—</span>Tolerancia cero</a></li>
+    <li class="g-f"><a href="#ayuda"><span class="n">—</span>Pedir ayuda</a></li>
+    <li class="g-f"><a href="#mapa"><span class="n">—</span>Mapa del protocolo</a></li>
+
+    <li class="th g-f"><i></i>Fundamentos</li>
+    <li class="g-f"><a href="#s-1"><span class="n">1</span>Objetivo</a></li>
+    <li class="g-f"><a href="#s-2"><span class="n">2</span>Alcance</a></li>
+    <li class="g-f"><a href="#s-3"><span class="n">3</span>Marco normativo</a></li>
+    <li class="g-f"><a href="#s-4"><span class="n">4</span>Principios</a></li>
+    <li class="g-f"><a href="#s-5"><span class="n">5</span>Enfoque de género y diferencial</a></li>
+    <li class="g-f"><a href="#s-6"><span class="n">6</span>Definiciones</a></li>
+
+    <li class="th g-c"><i></i>Qué es acoso</li>
+    <li class="g-c"><a href="#s-7"><span class="n">7</span>Conductas de acoso sexual</a></li>
+    <li class="g-c"><a href="#s-8"><span class="n">8</span>Conductas de acoso laboral</a></li>
+
+    <li class="th g-v"><i></i>Quién responde</li>
+    <li class="g-v"><a href="#s-9"><span class="n">9</span>Responsabilidades de LOGIGHO</a></li>
+    <li class="g-v"><a href="#s-10"><span class="n">10</span>Responsabilidades de los trabajadores</a></li>
+    <li class="g-v"><a href="#s-11"><span class="n">11</span>Gestión Humana y SST</a></li>
+    <li class="g-v"><a href="#s-12"><span class="n">12</span>Comité de Atención</a></li>
+    <li class="g-v"><a href="#s-13"><span class="n">13</span>Integración del Comité</a></li>
+    <li class="g-v"><a href="#s-14"><span class="n">14</span>Funciones del Comité</a></li>
+    <li class="g-v"><a href="#s-15"><span class="n">15</span>Comité de Convivencia (COCOLA)</a></li>
+    <li class="g-v"><a href="#s-16"><span class="n">16</span>COPASST</a></li>
+
+    <li class="th g-f"><i></i>Cómo denunciar</li>
+    <li class="g-f"><a href="#s-17"><span class="n">17</span>Canales de queja</a></li>
+    <li class="g-f"><a href="#s-18"><span class="n">18</span>Información de la queja</a></li>
+    <li class="g-f"><a href="#s-19"><span class="n">19</span>Ruta de atención con plazos</a></li>
+    <li class="g-f"><a href="#s-20"><span class="n">20</span>Medidas de protección</a></li>
+    <li class="g-f"><a href="#s-21"><span class="n">21</span>Protección contra represalias</a></li>
+    <li class="g-f"><a href="#s-22"><span class="n">22</span>Atención y ARL</a></li>
+    <li class="g-f"><a href="#s-23"><span class="n">23</span>Autoridades externas</a></li>
+
+    <li class="th g-c"><i></i>El proceso</li>
+    <li class="g-c"><a href="#s-24"><span class="n">24</span>Investigación y debido proceso</a></li>
+    <li class="g-c"><a href="#s-25"><span class="n">25</span>No revictimización</a></li>
+    <li class="g-c"><a href="#s-26"><span class="n">26</span>Medidas correctivas</a></li>
+    <li class="g-c"><a href="#s-27"><span class="n">27</span>Campaña de acción colectiva</a></li>
+    <li class="g-c"><a href="#s-28"><span class="n">28</span>Seguimiento y cierre</a></li>
+    <li class="g-c"><a href="#s-29"><span class="n">29</span>Confidencialidad y datos</a></li>
+
+    <li class="th g-v"><i></i>Prevención y casos especiales</li>
+    <li class="g-v"><a href="#s-30"><span class="n">30</span>Prevención y capacitación</a></li>
+    <li class="g-v"><a href="#s-31"><span class="n">31</span>Contratistas y terceros</a></li>
+    <li class="g-v"><a href="#s-32"><span class="n">32</span>Reglamento y contratos</a></li>
+    <li class="g-v"><a href="#s-33"><span class="n">33</span>Aprendices menores de edad</a></li>
+    <li class="g-v"><a href="#s-34"><span class="n">34</span>Casos con Gerencia</a></li>
+    <li class="g-v"><a href="#s-35"><span class="n">35</span>Casos con un integrante del Comité</a></li>
+
+    <li class="th g-f"><i></i>Evaluación y anexos</li>
+    <li class="g-f"><a href="#s-36"><span class="n">36</span>Evaluación e indicadores</a></li>
+    <li class="g-f"><a href="#s-37"><span class="n">37</span>Vigencia y actualización</a></li>
+    <li class="g-f"><a href="#s-38"><span class="n">38</span>Anexos</a></li>
+  </ul>
+</aside>
+
+<main id="inicio">
+
+<section class="top g-f" id="tolerancia">
+  <div class="cero">
+    <div class="cero-0" aria-hidden="true">0</div>
+    <div>
+      <span class="kicker">Declaración</span>
+      <h2 class="t">Tolerancia <em>cero</em></h2>
+      <p>LOGIGHO S.A.S. declara <strong>TOLERANCIA CERO</strong> frente a toda conducta de acoso laboral, acoso sexual, violencia basada en género, discriminación y cualquier acto que vulnere la dignidad de las personas en el contexto laboral. La empresa se compromete a prevenir, atender y sancionar estas conductas, garantizando la confidencialidad, protección y no revictimización de quienes acudan a los canales dispuestos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="top g-f" id="ayuda">
+  <div class="ayuda">
+    <div class="ayuda-head">
+      <div>
+        <span class="kicker">Canales de queja · secciones 17 y 23</span>
+        <h2 class="t">Pide ayuda. <em>Tú eliges</em> el canal.</h2>
+        <p class="lead">Los tres canales son confidenciales. Usa el que te resulte más seguro; también puedes acudir directamente a Gerencia.</p>
+      </div>
+      <svg viewBox="0 0 200 260" aria-hidden="true">
+        <use href="#m-cola" x="-2" y="18" width="112" height="242" fill="var(--sil-1)"/>
+        <use href="#m-largo" x="78" y="0" width="120" height="260" fill="var(--fucsia)"/>
+      </svg>
+    </div>
+
+    <div class="canales">
+      <div class="canal g-f">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <h3>Por correo</h3>
+        <span class="mail">denuncias@logigho.com</span>
+        <p>Lo administra Gestión Humana, con acceso restringido y bitácora de acceso.</p>
+        <a class="b b-main" href="mailto:denuncias@logigho.com">Escribir un correo</a>
+      </div>
+      <div class="canal g-v">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>
+        <h3>Buzón físico</h3>
+        <p>Buzón cerrado con llave en el archivo de Gestión Humana, con formularios disponibles. Solo la persona coordinadora del Comité tiene la llave.</p>
+      </div>
+      <div class="canal g-c">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.8A8 8 0 1 1 21 12Z"/></svg></span>
+        <h3>En persona</h3>
+        <p>Ante Gestión Humana o cualquier integrante del Comité de Atención. Se levanta un acta firmada por ti y por quien te recibe.</p>
+      </div>
+    </div>
+
+    <div class="lineas-t">
+      <h3>Líneas externas</h3>
+      <p>La queja interna <strong>no</strong> es requisito para acudir a las autoridades.</p>
+    </div>
+    <div class="lineas">
+      <a class="linea g-v" href="tel:155"><span class="num">155</span><span><b>Línea Púrpura</b><span>Mujeres víctimas de violencia</span></span></a>
+      <a class="linea g-f" href="tel:122"><span class="num">122</span><span><b>Fiscalía General</b><span>Delitos sexuales · o la URI local</span></span></a>
+      <a class="linea g-c" href="tel:141"><span class="num">141</span><span><b>ICBF</b><span>Si hay menores de edad involucrados</span></span></a>
+    </div>
+    <p class="otras">También: Inspección de Trabajo del Ministerio del Trabajo, Comisaría de Familia, Defensoría del Pueblo y tu ARL. <a href="#s-23">Ver todas las rutas externas</a></p>
+
+    <div class="garantias">
+      <a class="gar" href="#s-18"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>No te exigirán pruebas para escucharte y orientarte<small>Sección 18</small></span></a>
+      <a class="gar" href="#s-25"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Nadie te obligará a confrontar a la persona señalada<small>Sección 25</small></span></a>
+      <a class="gar" href="#s-21"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Las represalias están expresamente prohibidas<small>Sección 21</small></span></a>
+      <a class="gar" href="#s-29"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Tu información tiene acceso restringido y confidencial<small>Sección 29</small></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="top" id="mapa">
+  <span class="kicker">38 secciones en 7 partes</span>
+  <h2 class="t">Mapa del <em>protocolo</em></h2>
+  <p class="lead">Cada color agrupa una parte del documento. Toca cualquier sección para ir directo a ella.</p>
+  <div class="mapa">
+    <div class="parte g-f"><a class="parte-h" href="#g-fundamentos"><i></i><b>Fundamentos</b><span>1–6</span></a>
+      <ul><li><a href="#s-1"><span class="n">1</span>Objetivo</a></li><li><a href="#s-2"><span class="n">2</span>Alcance</a></li><li><a href="#s-3"><span class="n">3</span>Marco normativo</a></li><li><a href="#s-4"><span class="n">4</span>Principios</a></li><li><a href="#s-5"><span class="n">5</span>Enfoque de género y diferencial</a></li><li><a href="#s-6"><span class="n">6</span>Definiciones</a></li></ul></div>
+    <div class="parte g-c"><a class="parte-h" href="#g-conductas"><i></i><b>Qué es acoso</b><span>7–8</span></a>
+      <ul><li><a href="#s-7"><span class="n">7</span>Conductas de posible acoso sexual</a></li><li><a href="#s-8"><span class="n">8</span>Conductas de posible acoso laboral</a></li></ul></div>
+    <div class="parte g-v"><a class="parte-h" href="#g-responden"><i></i><b>Quién responde</b><span>9–16</span></a>
+      <ul><li><a href="#s-9"><span class="n">9</span>Responsabilidades de LOGIGHO</a></li><li><a href="#s-10"><span class="n">10</span>De los trabajadores</a></li><li><a href="#s-11"><span class="n">11</span>De Gestión Humana y SST</a></li><li><a href="#s-12"><span class="n">12</span>Comité de Atención</a></li><li><a href="#s-13"><span class="n">13</span>Integración del Comité</a></li><li><a href="#s-14"><span class="n">14</span>Funciones del Comité</a></li><li><a href="#s-15"><span class="n">15</span>COCOLA</a></li><li><a href="#s-16"><span class="n">16</span>COPASST</a></li></ul></div>
+    <div class="parte g-f"><a class="parte-h" href="#g-denuncia"><i></i><b>Cómo denunciar</b><span>17–23</span></a>
+      <ul><li><a href="#s-17"><span class="n">17</span>Canales de queja</a></li><li><a href="#s-18"><span class="n">18</span>Información mínima de la queja</a></li><li><a href="#s-19"><span class="n">19</span>Ruta de atención con plazos</a></li><li><a href="#s-20"><span class="n">20</span>Medidas de protección</a></li><li><a href="#s-21"><span class="n">21</span>Protección contra represalias</a></li><li><a href="#s-22"><span class="n">22</span>Atención y ARL</a></li><li><a href="#s-23"><span class="n">23</span>Autoridades externas</a></li></ul></div>
+    <div class="parte g-c"><a class="parte-h" href="#g-proceso"><i></i><b>El proceso</b><span>24–29</span></a>
+      <ul><li><a href="#s-24"><span class="n">24</span>Investigación y debido proceso</a></li><li><a href="#s-25"><span class="n">25</span>No revictimización</a></li><li><a href="#s-26"><span class="n">26</span>Medidas correctivas y disciplinarias</a></li><li><a href="#s-27"><span class="n">27</span>Campaña de acción colectiva</a></li><li><a href="#s-28"><span class="n">28</span>Seguimiento y cierre</a></li><li><a href="#s-29"><span class="n">29</span>Confidencialidad y datos</a></li></ul></div>
+    <div class="parte g-v"><a class="parte-h" href="#g-prevencion"><i></i><b>Prevención y casos especiales</b><span>30–35</span></a>
+      <ul><li><a href="#s-30"><span class="n">30</span>Prevención y capacitación</a></li><li><a href="#s-31"><span class="n">31</span>Contratistas y terceros</a></li><li><a href="#s-32"><span class="n">32</span>Reglamento Interno y contratos</a></li><li><a href="#s-33"><span class="n">33</span>Aprendices menores de edad</a></li><li><a href="#s-34"><span class="n">34</span>Casos que involucren a Gerencia</a></li><li><a href="#s-35"><span class="n">35</span>Casos con un integrante del Comité</a></li></ul></div>
+    <div class="parte g-f"><a class="parte-h" href="#g-evaluacion"><i></i><b>Evaluación y anexos</b><span>36–38</span></a>
+      <ul><li><a href="#s-36"><span class="n">36</span>Evaluación e indicadores</a></li><li><a href="#s-37"><span class="n">37</span>Vigencia y actualización</a></li><li><a href="#s-38"><span class="n">38</span>Anexos</a></li></ul></div>
+  </div>
+</section>
+
+<!-- ============ PARTE 1 · FUNDAMENTOS ============ -->
+<section class="grupo g-f" id="g-fundamentos">
+  <div class="grupo-h"><span class="dot"><i></i></span><div><span class="kicker">Parte 1 · Secciones 1 a 6</span><h2 class="t">Fundamentos</h2><p class="lead">Para qué existe el protocolo, a quién cubre, en qué normas se apoya y qué significa cada término.</p></div></div>
+  <div class="blks">
+
+    <article class="blk" id="s-1">
+      <div class="blk-h"><a class="sn" href="#s-1">1</a><h3>Objetivo</h3></div>
+      <p>Establecer los lineamientos, mecanismos y rutas de prevención, recepción, atención, protección, investigación, corrección y seguimiento frente a situaciones de acoso laboral, acoso sexual, violencia basada en género, discriminación y conductas que afecten la dignidad de las personas en el contexto laboral de LOGIGHO S.A.S., en cumplimiento de la Ley 2365 de 2024, la Resolución 3461 de 2025 y demás normatividad vigente.</p>
+    </article>
+
+    <article class="blk" id="s-2">
+      <div class="blk-h"><a class="sn" href="#s-2">2</a><h3>Alcance</h3></div>
+      <p>Aplica a trabajadores, directivos, contratistas, practicantes, aprendices SENA, proveedores y demás personas que participen en el contexto laboral de LOGIGHO. Incluye hechos ocurridos en instalaciones, desplazamientos, viajes, eventos, actividades de formación, trabajo remoto, teletrabajo, actividades sociales de la empresa y comunicaciones digitales relacionadas con el trabajo (correo, WhatsApp, redes sociales corporativas, plataformas colaborativas).</p>
+    </article>
+
+    <article class="blk" id="s-3">
+      <div class="blk-h"><a class="sn" href="#s-3">3</a><h3>Marco normativo</h3></div>
+      <ul class="li norma">
+        <li><span class="ley">Constitución Política de Colombia</span><span>Arts. 13, 25, 43, 53.</span></li>
+        <li><span class="ley">Ley 1010 de 2006</span><span>Medidas de prevención, corrección y sanción del acoso laboral.</span></li>
+        <li><span class="ley">Ley 1257 de 2008</span><span>Prevención y sanción de violencia contra las mujeres.</span></li>
+        <li><span class="ley">Ley 1482 de 2011</span><span>Sanciones contra actos de discriminación.</span></li>
+        <li><span class="ley">Ley 1581 de 2012 y Decreto 1377 de 2013</span><span>Protección de datos personales.</span></li>
+        <li><span class="ley">Ley 1098 de 2006</span><span>Código de Infancia y Adolescencia (aprendices menores).</span></li>
+        <li><span class="ley">Ley 2365 de 2024</span><span>Prevención, atención y sanción del acoso sexual laboral y educativo.</span></li>
+        <li><span class="ley">Resolución 3461 de 2025 · Ministerio del Trabajo</span><span>Comité de Convivencia Laboral (COCOLA).</span></li>
+        <li><span class="ley">Resolución 2646 de 2008</span><span>Factores de riesgo psicosocial.</span></li>
+        <li><span class="ley">Decreto 1072 de 2015</span><span>Decreto Único Reglamentario del Sector Trabajo.</span></li>
+        <li><span class="ley">Y demás normas</span><span>que las modifiquen, adicionen o sustituyan.</span></li>
+      </ul>
+    </article>
+
+    <article class="blk" id="s-4">
+      <div class="blk-h"><a class="sn" href="#s-4">4</a><h3>Principios</h3></div>
+      <div class="pills">
+        <span class="pill">Dignidad humana</span><span class="pill">Igualdad y no discriminación</span><span class="pill">Confidencialidad</span><span class="pill">Debido proceso</span><span class="pill">Imparcialidad</span><span class="pill">Celeridad</span><span class="pill">No revictimización</span><span class="pill">No confrontación</span><span class="pill">Protección contra represalias</span><span class="pill">Buena fe</span><span class="pill">Enfoque de género y diferencial</span><span class="pill">Presunción de buena fe de la persona afectada</span>
+      </div>
+    </article>
+
+    <article class="blk" id="s-5">
+      <div class="blk-h"><a class="sn" href="#s-5">5</a><h3>Enfoque de género y diferencial</h3></div>
+      <p>La atención considerará las relaciones de poder derivadas del género, orientación sexual, identidad de género, edad, discapacidad, origen étnico, condición de gestación o lactancia, condición migratoria, condición de víctima del conflicto u otras condiciones. Las medidas de protección se ajustarán a la situación específica de la víctima.</p>
+      <div class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.2C1 8.3 3.2 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.7 0 5.9 3.8 4.4 7.3C19.5 16.4 12 21 12 21Z"/></svg><p>Se dará <strong>atención prioritaria</strong> a mujeres, personas LGBTI+, aprendices menores de edad, personas con discapacidad y demás sujetos de especial protección constitucional.</p></div>
+    </article>
+
+    <article class="blk" id="s-6">
+      <div class="blk-h"><a class="sn" href="#s-6">6</a><h3>Definiciones</h3></div>
+      <dl class="defs">
+        <div><dt>Acoso laboral</dt><dd>Conducta persistente y demostrable, ejercida sobre un trabajador por parte de un empleador, superior jerárquico, compañero o subalterno, encaminada a infundir miedo, intimidación, terror y angustia, causar perjuicio laboral, generar desmotivación o inducir la renuncia, en los términos de la Ley 1010 de 2006.</dd></div>
+        <div><dt>Acoso sexual laboral</dt><dd>Toda conducta o comportamiento verbal, no verbal, físico, digital o de cualquier otro tipo, de naturaleza o connotación sexual, ejercida sin el consentimiento de la persona afectada, que tenga por objeto o resultado atentar contra su dignidad o crear un entorno intimidatorio, hostil, degradante, humillante u ofensivo, con independencia de la relación jerárquica entre las partes <span class="cite">(Ley 2365 de 2024, art. 3)</span>.</dd></div>
+        <div><dt>Acoso sexual digital</dt><dd>Modalidad de acoso sexual ejercida a través de medios electrónicos, redes sociales, mensajería instantánea, correo o cualquier plataforma digital vinculada al contexto laboral.</dd></div>
+        <div><dt>Violencia basada en género</dt><dd>Cualquier acción u omisión que cause muerte, daño o sufrimiento físico, sexual, psicológico, económico o patrimonial por su condición de mujer o de género diverso <span class="cite">(Ley 1257 de 2008)</span>.</dd></div>
+        <div><dt>Víctima o persona afectada</dt><dd>Quien manifiesta haber experimentado la conducta.</dd></div>
+        <div><dt>Persona señalada</dt><dd>Aquella respecto de quien se presenta la queja.</dd></div>
+      </dl>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PARTE 2 · QUÉ ES ACOSO ============ -->
+<section class="grupo g-c" id="g-conductas">
+  <div class="grupo-h"><span class="dot"><i></i></span><div><span class="kicker">Parte 2 · Secciones 7 y 8</span><h2 class="t">Qué es <em>acoso</em></h2><p class="lead">Ejemplos de conductas que pueden constituir acoso. Si reconoces alguna, puedes reportarla aunque no tengas pruebas.</p></div></div>
+  <div class="blks">
+
+    <article class="blk" id="s-7">
+      <div class="blk-h"><a class="sn" href="#s-7">7</a><h3>Conductas de posible acoso sexual</h3></div>
+      <ul class="li cols">
+        <li>Comentarios o insinuaciones sexuales no deseadas, incluyendo comentarios sobre el cuerpo o la vida sexual.</li>
+        <li>Propuestas sexuales explícitas o veladas.</li>
+        <li>Mensajes, imágenes o contenido sexual no solicitado por medios físicos o digitales (WhatsApp, correo, redes sociales).</li>
+        <li>Contacto físico no consentido: roces, abrazos, besos, palmadas.</li>
+        <li>Gestos, miradas o expresiones de connotación sexual intimidantes.</li>
+        <li>Condicionamiento de beneficios laborales, ascensos o permanencia al otorgamiento de favores sexuales (chantaje sexual).</li>
+        <li>Amenazas o represalias por rechazo a insinuaciones o propuestas sexuales.</li>
+        <li>Invitaciones insistentes de tipo sentimental o sexual pese a la negativa.</li>
+        <li>Difusión o exhibición no consentida de imágenes o contenido íntimo.</li>
+        <li>Demás conductas de persecución, hostigamiento o asedio sexual.</li>
+      </ul>
+    </article>
+
+    <article class="blk" id="s-8">
+      <div class="blk-h"><a class="sn" href="#s-8">8</a><h3>Conductas de posible acoso laboral</h3></div>
+      <div class="pills">
+        <span class="pill">Agresiones físicas o verbales</span><span class="pill">Expresiones injuriosas o ultrajantes</span><span class="pill">Comentarios humillantes</span><span class="pill">Amenazas injustificadas</span><span class="pill">Descalificación reiterada del trabajo</span><span class="pill">Burlas o ridiculización pública</span><span class="pill">Cargas laborales injustificadas con intención de afectar</span><span class="pill">Aislamiento social o profesional</span><span class="pill">Obstaculización deliberada al desempeño</span><span class="pill">Trato discriminatorio</span>
+      </div>
+      <p>Y demás conductas previstas en la Ley 1010 de 2006.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PARTE 3 · QUIÉN RESPONDE ============ -->
+<section class="grupo g-v" id="g-responden">
+  <div class="grupo-h"><span class="dot"><i></i></span><div><span class="kicker">Parte 3 · Secciones 9 a 16</span><h2 class="t">Quién <em>responde</em></h2><p class="lead">Qué le corresponde a la empresa, a cada trabajador y a cada comité. Al final, una comparación de los tres comités.</p></div></div>
+  <div class="blks">
+
+    <article class="blk" id="s-9">
+      <div class="blk-h"><a class="sn" href="#s-9">9</a><h3>Responsabilidades de LOGIGHO</h3></div>
+      <ul class="li cols">
+        <li>Prevenir, atender y gestionar oportunamente las situaciones reportadas.</li>
+        <li>Divulgar el protocolo a todo el personal, incluidos contratistas y aprendices.</li>
+        <li>Disponer canales accesibles (físico, electrónico y verbal) para la recepción de quejas.</li>
+        <li>Garantizar la confidencialidad de la información y de la identidad de las partes.</li>
+        <li>Adoptar medidas de protección inmediatas cuando exista riesgo para la víctima.</li>
+        <li>Orientar a la persona afectada sobre atención en ARL, EPS y autoridades competentes.</li>
+        <li>Respetar el debido proceso de todas las partes.</li>
+        <li>Adoptar medidas correctivas o disciplinarias cuando corresponda.</li>
+        <li>Prevenir y sancionar las represalias.</li>
+        <li>Implementar campañas de acción colectiva y de transformación del ambiente laboral.</li>
+        <li>Realizar seguimiento a las medidas adoptadas y evaluar anualmente el protocolo.</li>
+        <li>Incorporar la política en el Reglamento Interno de Trabajo y en los contratos laborales.</li>
+      </ul>
+    </article>
+
+    <article class="blk" id="s-10">
+      <div class="blk-h"><a class="sn" href="#s-10">10</a><h3>Responsabilidades de los trabajadores</h3></div>
+      <ul class="li">
+        <li>Mantener relaciones respetuosas.</li>
+        <li>Abstenerse de conductas de acoso, violencia o discriminación.</li>
+        <li>Informar situaciones de riesgo.</li>
+        <li>Colaborar de buena fe con las actuaciones.</li>
+        <li>Guardar reserva de la información conocida.</li>
+        <li>Cumplir las medidas preventivas o correctivas adoptadas por la empresa.</li>
+      </ul>
+    </article>
+
+    <article class="blk" id="s-11">
+      <div class="blk-h"><a class="sn" href="#s-11">11</a><h3>Responsabilidades de Gestión Humana y SST</h3></div>
+      <ul class="li cols">
+        <li>Socializar el protocolo.</li>
+        <li>Recibir u orientar las quejas.</li>
+        <li>Activar la ruta interna.</li>
+        <li>Coordinar medidas de protección.</li>
+        <li>Orientar sobre ARL y autoridades externas.</li>
+        <li>Conservar registros confidenciales.</li>
+        <li>Realizar seguimiento.</li>
+        <li>Coordinar capacitación periódica.</li>
+        <li>Articular con las instancias internas (Comité de Atención, COCOLA, COPASST) y externas (ARL, Ministerio del Trabajo, Fiscalía, ICBF, etc.) correspondientes.</li>
+      </ul>
+    </article>
+
+    <article class="blk" id="s-12">
+      <div class="blk-h"><a class="sn" href="#s-12">12</a><h3>Comité de Atención y Seguimiento de Casos de Acoso Sexual</h3></div>
+      <p>LOGIGHO S.A.S. contará con un Comité de Atención y Seguimiento de Casos de Acoso Sexual como instancia interna especializada para la recepción, orientación, activación de la ruta, seguimiento y coordinación de las actuaciones frente a presuntos casos de acoso sexual.</p>
+      <div class="note" style="margin-top:.85rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16v.5"/></svg><p><strong>Esta instancia es diferente e independiente del Comité de Convivencia Laboral (COCOLA)</strong>, ya que —conforme a la Resolución 3461 de 2025— el COCOLA <strong>NO</strong> tiene competencia sobre casos de acoso sexual, y estos casos <strong>NO</strong> son conciliables.</p></div>
+      <p>El Comité estará bajo la coordinación de Gestión Humana o de la persona que designe formalmente la Gerencia.</p>
+    </article>
+
+    <article class="blk" id="s-13">
+      <div class="blk-h"><a class="sn" href="#s-13">13</a><h3>Integración del Comité de Atención</h3></div>
+      <p>Para una organización del tamaño de LOGIGHO S.A.S., se establece la siguiente estructura, formalizada mediante acto interno de Gerencia:</p>
+      <ul class="li">
+        <li>Responsable de Gestión Humana o su delegado — <strong>coordinador(a) del Comité</strong>.</li>
+        <li>Responsable de Seguridad y Salud en el Trabajo (SST) o su delegado.</li>
+        <li>Un representante designado por la Gerencia.</li>
+        <li>Un integrante adicional designado por la Gerencia.</li>
+      </ul>
+      <p>Todos los integrantes deberán contar con formación y sensibilización suficiente. El Comité podrá solicitar apoyo técnico de la ARL, asesoría jurídica externa u otras entidades competentes cuando sea necesario. Cada integrante firmará un compromiso de confidencialidad (Anexo 5).</p>
+      <div class="note" style="margin-top:.85rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><p><strong>Vigencia:</strong> el Comité se conforma por un periodo de <strong>dos (2) años renovables</strong>, alineado con la vigencia del Comité de Convivencia Laboral.</p></div>
+      <p>En caso de conflicto de interés, relación directa con las partes o cualquier circunstancia que pueda afectar la imparcialidad, el integrante deberá apartarse y la Gerencia designará su reemplazo.</p>
+    </article>
+
+    <article class="blk" id="s-14">
+      <div class="blk-h"><a class="sn" href="#s-14">14</a><h3>Funciones del Comité de Atención</h3></div>
+      <ul class="li cols">
+        <li>Recibir las quejas o reportes y garantizar su manejo confidencial.</li>
+        <li>Brindar primera orientación y explicar las rutas internas y externas disponibles.</li>
+        <li>Verificar la existencia de riesgo inmediato y activar las medidas de protección correspondientes.</li>
+        <li>Orientar sobre atención emocional y psicológica a través de la ARL.</li>
+        <li>Activar y coordinar la ruta interna de atención, evitando revictimización y confrontación.</li>
+        <li>Recopilar únicamente la información necesaria para la gestión del caso.</li>
+        <li>Hacer seguimiento a las medidas de protección y a las actuaciones derivadas.</li>
+        <li>Remitir o derivar el caso a la instancia interna o autoridad competente cuando corresponda.</li>
+        <li>Elaborar registros e informes internos confidenciales y estadísticas anonimizadas.</li>
+        <li>Verificar el cierre del caso, la no repetición y la ausencia de represalias.</li>
+        <li>Proponer acciones de prevención, sensibilización y capacitación.</li>
+      </ul>
+      <div class="note" style="margin-top:.85rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Z"/></svg><p>El Comité actuará como instancia de atención, orientación, coordinación y seguimiento. <strong>NO</strong> podrá obligar a la persona afectada a conciliar o confrontar a la persona señalada, ni impedirle acudir directamente a las autoridades externas.</p></div>
+    </article>
+
+    <article class="blk" id="s-15">
+      <div class="blk-h"><a class="sn" href="#s-15">15</a><h3>Comité de Convivencia Laboral (COCOLA)</h3></div>
+      <p>El Comité de Convivencia Laboral, regulado por la Resolución 3461 de 2025, mantendrá sus funciones frente al acoso laboral (Ley 1010 de 2006) y la promoción de la convivencia. <strong>En casos de acoso sexual NO será la instancia competente para adelantar conciliación.</strong> Cuando un caso contenga elementos de acoso laboral y sexual, se coordinarán las actuaciones entre ambas instancias evitando duplicidad y revictimización.</p>
+      <a class="link-rit" href="https://juanjo-geo.github.io/reglamento-logigho/#art-81">Ver el Comité de Convivencia en el Reglamento Interno <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    </article>
+
+    <article class="blk" id="s-16">
+      <div class="blk-h"><a class="sn" href="#s-16">16</a><h3>COPASST</h3></div>
+      <p>El COPASST podrá apoyar acciones preventivas y de promoción de ambientes saludables dentro del SG-SST, pero <strong>NO</strong> será utilizado como instancia de investigación, conciliación o decisión de casos individuales de acoso sexual o laboral.</p>
+    </article>
+
+    <article class="blk" id="comparacion">
+      <div class="blk-h"><span class="sn">Resumen</span><h3>¿Qué comité atiende cada caso?</h3></div>
+      <p>Comparación de las secciones 12, 15 y 16.</p>
+      <div class="tabla-wrap">
+        <table>
+          <thead><tr><th></th><th class="c-f">Comité de Atención</th><th class="c-v">COCOLA</th><th class="c-c">COPASST</th></tr></thead>
+          <tbody>
+            <tr><td>Para qué existe</td><td>Recibir, orientar, activar la ruta y hacer seguimiento a presuntos casos de acoso sexual</td><td>Acoso laboral (Ley 1010 de 2006) y promoción de la convivencia</td><td>Acciones preventivas y ambientes saludables dentro del SG-SST</td></tr>
+            <tr><td>¿Atiende acoso sexual?</td><td><span class="si">Sí</span> · es la instancia especializada</td><td><span class="no">No</span> · no es competente y estos casos no son conciliables</td><td><span class="no">No</span> · no investiga, concilia ni decide casos individuales</td></tr>
+            <tr><td>Caso mixto</td><td colspan="2">Si hay elementos de acoso laboral y sexual, ambas instancias coordinan sus actuaciones para evitar duplicidad y revictimización</td><td>—</td></tr>
+            <tr><td>Marco</td><td class="mono">Ley 2365 de 2024</td><td class="mono">Resolución 3461 de 2025</td><td class="mono">SG-SST</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PARTE 4 · CÓMO DENUNCIAR ============ -->
+<section class="grupo g-f" id="g-denuncia">
+  <div class="grupo-h"><span class="dot"><i></i></span><div><span class="kicker">Parte 4 · Secciones 17 a 23</span><h2 class="t">Cómo <em>denunciar</em></h2><p class="lead">Los canales, qué información ayuda, los plazos que la empresa debe cumplir y las medidas para protegerte.</p></div></div>
+  <div class="blks">
+
+    <article class="blk" id="s-17">
+      <div class="blk-h"><a class="sn" href="#s-17">17</a><h3>Canales de queja</h3></div>
+      <p>LOGIGHO dispone de tres (3) canales para la recepción de quejas, en cumplimiento del artículo 8 de la Ley 2365 de 2024:</p>
+      <div class="canales" style="margin-top:.85rem">
+        <div class="canal g-f"><h3>Canal electrónico</h3><p>Correo institucional <a class="mail" href="mailto:denuncias@logigho.com">denuncias@logigho.com</a>, administrado por Gestión Humana con acceso restringido y bitácora de acceso. También podrá presentarse por formulario web habilitado en la intranet.</p></div>
+        <div class="canal g-v"><h3>Canal físico</h3><p>Buzón cerrado con llave ubicado en el archivo de Gestión Humana, con formularios físicos disponibles. Solo la persona coordinadora del Comité tiene la llave.</p></div>
+        <div class="canal g-c"><h3>Canal verbal</h3><p>Ante la persona responsable de Gestión Humana o cualquier integrante del Comité de Atención. Se levantará acta escrita firmada por la persona afectada y por quien recibe.</p></div>
+      </div>
+      <p>Todos los canales garantizan confidencialidad, y la persona afectada podrá elegir el que le resulte más seguro. También podrá acudir directamente a Gerencia.</p>
+    </article>
+
+    <article class="blk" id="s-18">
+      <div class="blk-h"><a class="sn" href="#s-18">18</a><h3>Información mínima de la queja</h3></div>
+      <p>Cuando sea posible, se solicitará:</p>
+      <div class="pills" style="margin-top:.7rem">
+        <span class="pill">Fecha aproximada</span><span class="pill">Lugar o medio</span><span class="pill">Descripción de los hechos</span><span class="pill">Persona señalada</span><span class="pill">Testigos</span><span class="pill">Evidencias disponibles</span><span class="pill">Necesidad de protección</span>
+      </div>
+      <div class="note" style="margin-top:.95rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><p><strong>NO se exigirán pruebas</strong> para escuchar y orientar a la persona afectada. La ausencia de evidencias no impedirá la activación de la ruta.</p></div>
+    </article>
+
+    <article class="blk" id="s-19">
+      <div class="blk-h"><a class="sn" href="#s-19">19</a><h3>Ruta de atención con plazos</h3></div>
+      <div class="plazos"><b>Plazos obligatorios</b><p>Los plazos se cuentan en días hábiles. Toda actuación debe quedar documentada en el expediente confidencial del caso.</p></div>
+      <ol class="ruta">
+        <li><span class="dot">1</span><div class="paso"><span class="plazo">Máx. 24 horas hábiles</span><p>Recepción y acuse confidencial de la queja.</p></div></li>
+        <li><span class="dot">2</span><div class="paso"><span class="plazo">Máx. 48 horas</span><p>Identificación de riesgo inmediato, desde la recepción.</p></div></li>
+        <li><span class="dot">3</span><div class="paso"><span class="plazo">Máx. 48 horas</span><p>Activación de medidas cautelares (si aplica).</p></div></li>
+        <li><span class="dot">4</span><div class="paso"><span class="plazo">Dentro de 3 días hábiles</span><p>Orientación sobre derechos y rutas internas/externas.</p></div></li>
+        <li><span class="dot">5</span><div class="paso"><span class="plazo">Dentro de 5 días hábiles</span><p>Comunicación reservada a la persona señalada del proceso.</p></div></li>
+        <li><span class="dot">6</span><div class="paso"><span class="plazo">Durante el proceso</span><p>Recopilación pertinente de información y garantía de debido proceso.</p></div></li>
+        <li><span class="dot">7</span><div class="paso"><span class="plazo">Máx. 30 días hábiles</span><p>Informe final del Comité con recomendaciones, contados desde la recepción, prorrogables una única vez por igual término justificado por escrito.</p></div></li>
+        <li><span class="dot">8</span><div class="paso"><span class="plazo">Inmediatas</span><p>Remisiones a autoridades cuando correspondan.</p></div></li>
+        <li><span class="dot">9</span><div class="paso"><span class="plazo">Dentro de 10 días hábiles</span><p>Adopción de medidas correctivas o disciplinarias, siguientes al informe.</p></div></li>
+        <li><span class="dot">10</span><div class="paso"><span class="plazo">Durante 6 meses</span><p>Seguimiento posterior al cierre.</p></div></li>
+        <li><span class="dot">11</span><div class="paso"><span class="plazo">Cierre</span><p>Cierre documentado y confidencial.</p></div></li>
+      </ol>
+    </article>
+
+    <article class="blk" id="s-20">
+      <div class="blk-h"><a class="sn" href="#s-20">20</a><h3>Medidas de protección</h3></div>
+      <p>LOGIGHO adoptará, según el caso y la solicitud de la víctima, las siguientes medidas previstas en el artículo 6 de la Ley 2365 de 2024:</p>
+      <ul class="li cols" style="margin-top:.85rem">
+        <li>Traslado temporal o definitivo de área, sede o turno de la persona señalada, garantizando que la carga no recaiga sobre la víctima.</li>
+        <li>Ajustes en la jornada u horario laboral.</li>
+        <li>Reasignación de funciones o de reporte jerárquico.</li>
+        <li>Modalidad de teletrabajo o trabajo remoto temporal cuando existan condiciones de riesgo.</li>
+        <li>Prohibición expresa de contacto o interacción con la persona señalada.</li>
+        <li>Licencia remunerada por el tiempo estrictamente necesario en casos graves.</li>
+        <li>Acompañamiento psicológico a través de la ARL.</li>
+      </ul>
+      <div class="note" style="margin-top:.95rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Z"/></svg><p><strong>Terminación del vínculo laboral a solicitud de la víctima:</strong> cuando la víctima manifieste que continuar en la empresa afecta su integridad, podrá solicitar la terminación del contrato con derecho a la indemnización correspondiente, conforme al artículo 6 numeral 5 de la Ley 2365 de 2024.</p></div>
+    </article>
+
+    <article class="blk" id="s-21">
+      <div class="blk-h"><a class="sn" href="#s-21">21</a><h3>Protección contra represalias</h3></div>
+      <p>Se prohíben expresamente las represalias contra víctimas, denunciantes, testigos o personas que colaboren con la atención del caso. Cualquier represalia —despido, sanción disciplinaria, cambio desfavorable de condiciones, aislamiento, hostigamiento— será gestionada como una situación independiente y podrá configurar justa causa para terminación del contrato del responsable.</p>
+    </article>
+
+    <article class="blk" id="s-22">
+      <div class="blk-h"><a class="sn" href="#s-22">22</a><h3>Atención y ARL</h3></div>
+      <p>La persona afectada será orientada sobre la posibilidad de acudir a la ARL para atención emocional y psicológica y para la calificación del origen laboral del evento. Igualmente, será orientada sobre servicios de su EPS.</p>
+    </article>
+
+    <article class="blk" id="s-23">
+      <div class="blk-h"><a class="sn" href="#s-23">23</a><h3>Autoridades externas</h3></div>
+      <p>La queja interna <strong>NO</strong> es requisito para acudir a autoridades. LOGIGHO informará a la persona afectada sobre las siguientes rutas externas y, cuando lo solicite o la ley lo exija, realizará las remisiones correspondientes:</p>
+      <div class="lineas" style="margin-top:.9rem">
+        <a class="linea g-f" href="tel:122"><span class="num">122</span><span><b>Fiscalía General de la Nación</b><span>Línea 122 / URI local (delitos sexuales)</span></span></a>
+        <a class="linea g-c" href="tel:141"><span class="num">141</span><span><b>ICBF</b><span>Si hay menores de edad involucrados: aprendices SENA</span></span></a>
+        <a class="linea g-v" href="tel:155"><span class="num">155</span><span><b>Línea Púrpura</b><span>Mujeres víctimas de violencia</span></span></a>
+      </div>
+      <ul class="li" style="margin-top:.95rem">
+        <li><strong>Ministerio del Trabajo</strong> — Inspección de Trabajo territorial (denuncia administrativa).</li>
+        <li><strong>Comisaría de Familia</strong> (violencia intrafamiliar concurrente).</li>
+        <li><strong>Defensoría del Pueblo.</strong></li>
+        <li><strong>ARL</strong> (atención emocional, psicológica y calificación de origen).</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PARTE 5 · EL PROCESO ============ -->
+<section class="grupo g-c" id="g-proceso">
+  <div class="grupo-h"><span class="dot"><i></i></span><div><span class="kicker">Parte 5 · Secciones 24 a 29</span><h2 class="t">El <em>proceso</em></h2><p class="lead">Cómo se investiga, qué garantías tienen ambas partes y cómo se cierra un caso.</p></div></div>
+  <div class="blks">
+
+    <article class="blk" id="s-24">
+      <div class="blk-h"><a class="sn" href="#s-24">24</a><h3>Investigación y debido proceso</h3></div>
+      <p>Las actuaciones internas serán prontas, imparciales y confidenciales. Se garantizará a la persona señalada el derecho a presentar explicaciones y aportar información. La activación de la ruta no implica por sí misma que se haya establecido responsabilidad.</p>
+      <div class="note" style="margin-top:.85rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><p>Las <strong>evidencias digitales</strong> (chats, correos, capturas de pantalla) se preservarán con cadena de custodia (fecha, hora, responsable de la recolección y —cuando sea técnicamente posible— hash de integridad) para su admisibilidad en un eventual proceso judicial.</p></div>
+    </article>
+
+    <article class="blk" id="s-25">
+      <div class="blk-h"><a class="sn" href="#s-25">25</a><h3>No revictimización y no confrontación</h3></div>
+      <p>No se obligará a la persona afectada a confrontar a la persona señalada. Se evitará repetir innecesariamente el relato de los hechos, cuestionar la vida privada o sexual de la víctima o realizar comentarios culpabilizantes.</p>
+    </article>
+
+    <article class="blk" id="s-26">
+      <div class="blk-h"><a class="sn" href="#s-26">26</a><h3>Medidas correctivas y disciplinarias</h3></div>
+      <p>Según el resultado de las actuaciones y el marco legal y contractual aplicable, podrán adoptarse medidas preventivas, correctivas, pedagógicas o disciplinarias, incluyendo llamado de atención, suspensión y terminación del contrato con justa causa <span class="cite">(Art. 62 CST y Ley 1010)</span>, respetando siempre el debido proceso.</p>
+    </article>
+
+    <article class="blk" id="s-27">
+      <div class="blk-h"><a class="sn" href="#s-27">27</a><h3>Campaña de acción colectiva</h3></div>
+      <p>Ante un presunto caso de acoso sexual, LOGIGHO <strong>DEBERÁ</strong> implementar una acción colectiva inmediata de prevención y transformación del ambiente laboral, sin revelar la identidad de la persona afectada, conforme al artículo 5 de la Ley 2365 de 2024. Esta acción incluirá al menos:</p>
+      <ul class="li" style="margin-top:.85rem">
+        <li>Reforzamiento de la sensibilización al equipo del área.</li>
+        <li>Recordación de los canales de denuncia.</li>
+        <li>Refuerzo de la política de tolerancia cero.</li>
+      </ul>
+    </article>
+
+    <article class="blk" id="s-28">
+      <div class="blk-h"><a class="sn" href="#s-28">28</a><h3>Seguimiento y cierre</h3></div>
+      <p>Gestión Humana, SST y el Comité verificarán la implementación de las medidas, ausencia de represalias y necesidades adicionales durante los <strong>seis (6) meses</strong> siguientes al cierre. El cierre se documentará de manera confidencial y no impide acudir a autoridades externas.</p>
+    </article>
+
+    <article class="blk" id="s-29">
+      <div class="blk-h"><a class="sn" href="#s-29">29</a><h3>Confidencialidad y tratamiento de datos</h3></div>
+      <p>La información tendrá acceso restringido y será tratada conforme a la Ley 1581 de 2012 y su decreto reglamentario. Los expedientes se archivarán bajo llave con acceso limitado a los integrantes del Comité. Los informes estadísticos serán anonimizados.</p>
+      <div class="note" style="margin-top:.85rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><p>Los datos sensibles <strong>no podrán ser compartidos por medios no institucionales</strong> (correos personales, WhatsApp personal).</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PARTE 6 · PREVENCIÓN Y CASOS ESPECIALES ============ -->
+<section class="grupo g-v" id="g-prevencion">
+  <div class="grupo-h"><span class="dot"><i></i></span><div><span class="kicker">Parte 6 · Secciones 30 a 35</span><h2 class="t">Prevención y <em>casos especiales</em></h2><p class="lead">Capacitación, terceros, y qué pasa cuando hay menores de edad, Gerencia o un integrante del Comité involucrados.</p></div></div>
+  <div class="blks">
+
+    <article class="blk" id="s-30">
+      <div class="blk-h"><a class="sn" href="#s-30">30</a><h3>Prevención y capacitación</h3></div>
+      <p>LOGIGHO realizará como mínimo <strong>dos (2) jornadas anuales</strong> de sensibilización y capacitación obligatoria sobre acoso laboral, acoso sexual, respeto, enfoque de género, canales de denuncia, ruta de atención, confidencialidad y prevención de represalias. Se llevará registro de asistencia firmado.</p>
+    </article>
+
+    <article class="blk" id="s-31">
+      <div class="blk-h"><a class="sn" href="#s-31">31</a><h3>Contratistas y terceros</h3></div>
+      <p>Los contratos con contratistas, proveedores y terceros incluirán cláusulas de conocimiento y cumplimiento del presente protocolo. Las situaciones que los involucren serán gestionadas dentro del ámbito de competencia de LOGIGHO conforme a las obligaciones contractuales y legales.</p>
+    </article>
+
+    <article class="blk" id="s-32">
+      <div class="blk-h"><a class="sn" href="#s-32">32</a><h3>Cláusula en Reglamento Interno y contratos</h3></div>
+      <p>La política contenida en este protocolo se incorpora al Reglamento Interno de Trabajo de LOGIGHO y a los contratos laborales, siendo su cumplimiento obligación esencial. Su incumplimiento constituye <strong>falta grave</strong> sancionable disciplinariamente y podrá dar lugar a la terminación del contrato con justa causa, sin perjuicio de las acciones legales que correspondan.</p>
+      <a class="link-rit" href="https://juanjo-geo.github.io/reglamento-logigho/">Consultar el Reglamento Interno de Trabajo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    </article>
+
+    <article class="blk" id="s-33">
+      <div class="blk-h"><a class="sn" href="#s-33">33</a><h3>Protección reforzada · aprendices menores de edad</h3></div>
+      <p>Cuando la víctima o la persona señalada sea menor de edad (aprendices SENA), se aplicará la protección reforzada de la Ley 1098 de 2006 (Código de Infancia y Adolescencia).</p>
+      <div class="note" style="margin-top:.85rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><p>Estos casos se remitirán de manera <strong>obligatoria e inmediata</strong> al ICBF (<a href="tel:141">Línea 141</a>) y a la Comisaría de Familia, sin perjuicio de las actuaciones internas.</p></div>
+    </article>
+
+    <article class="blk" id="s-34">
+      <div class="blk-h"><a class="sn" href="#s-34">34</a><h3>Casos que involucren a Gerencia</h3></div>
+      <p>Si la persona señalada es Gerencia, Representante Legal o alguien con autoridad directa sobre la instancia encargada, deberá apartarse de la gestión del caso y se activará la ruta externa (Ministerio del Trabajo, Fiscalía) o la instancia independiente que corresponda. La víctima podrá acudir directamente a autoridades externas sin requisito de agotamiento interno.</p>
+    </article>
+
+    <article class="blk" id="s-35">
+      <div class="blk-h"><a class="sn" href="#s-35">35</a><h3>Casos que involucren a un integrante del Comité</h3></div>
+      <p>El integrante involucrado deberá apartarse de cualquier actuación relacionada con el caso. La Gerencia designará un reemplazo temporal para garantizar imparcialidad.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PARTE 7 · EVALUACIÓN Y ANEXOS ============ -->
+<section class="grupo g-f" id="g-evaluacion">
+  <div class="grupo-h"><span class="dot"><i></i></span><div><span class="kicker">Parte 7 · Secciones 36 a 38</span><h2 class="t">Evaluación y <em>anexos</em></h2><p class="lead">Cómo se mide el protocolo cada año y los documentos que lo acompañan.</p></div></div>
+  <div class="blks">
+
+    <article class="blk" id="s-36">
+      <div class="blk-h"><a class="sn" href="#s-36">36</a><h3>Evaluación e indicadores</h3></div>
+      <p>Anualmente se evaluará el protocolo con base en los siguientes indicadores (información anonimizada):</p>
+      <ul class="li cols" style="margin-top:.85rem">
+        <li>Número de reportes recibidos, discriminados por tipo (acoso laboral, acoso sexual, violencia, discriminación).</li>
+        <li>Tiempo promedio de respuesta desde la recepción hasta la primera medida.</li>
+        <li>Número y tipo de medidas cautelares adoptadas.</li>
+        <li>Casos remitidos a autoridades externas.</li>
+        <li>Número de personas capacitadas y porcentaje de cobertura.</li>
+        <li>Casos con cierre efectivo y verificación de no repetición.</li>
+        <li>Número de acciones colectivas implementadas.</li>
+      </ul>
+      <p>Los resultados se reportarán a Gerencia y se incorporarán al informe anual del SG-SST.</p>
+    </article>
+
+    <article class="blk" id="s-37">
+      <div class="blk-h"><a class="sn" href="#s-37">37</a><h3>Vigencia y actualización</h3></div>
+      <p>El presente protocolo rige a partir de su aprobación por Gerencia y será revisado como mínimo anualmente o cuando se produzcan cambios normativos que lo hagan necesario.</p>
+    </article>
+
+    <article class="blk" id="s-38">
+      <div class="blk-h"><a class="sn" href="#s-38">38</a><h3>Anexos</h3></div>
+      <ul class="li">
+        <li><strong>Anexo 1:</strong> Formato de reporte de casos.</li>
+        <li><strong>Anexo 2:</strong> Ruta resumida de atención (infografía).</li>
+        <li><strong>Anexo 3:</strong> Acto de conformación del Comité de Atención de Casos de Acoso Sexual.</li>
+        <li><strong>Anexo 4:</strong> Formato confidencial de seguimiento y cierre.</li>
+        <li><strong>Anexo 5:</strong> Compromiso de confidencialidad de integrantes del Comité.</li>
+        <li><strong>Anexo 6:</strong> Formato de acta de reunión del Comité.</li>
+      </ul>
+      <p style="font-size:.86rem;color:var(--ink-soft)">Los anexos no se incluyen en esta versión web. La <a href="#s-19">ruta de atención con plazos</a> de la sección 19 está disponible aquí en formato visual.</p>
+    </article>
+  </div>
+</section>
+
+</main>
+</div>
+</div>
+
+<footer class="pie">
+  <div class="wrap">
+    <div>
+      <h2>Un lugar de trabajo <em>seguro y digno</em> para todas las personas.</h2>
+      <dl>
+        <div><dt>Dirección</dt><dd>CL 47 D 78 A 15 · Medellín, Antioquia</dd></div>
+        <div><dt>Teléfono</dt><dd><a href="tel:+573164340766">316 434 0766</a></dd></div>
+        <div><dt>Correo</dt><dd><a href="mailto:logigho.gerencia@gmail.com">logigho.gerencia@gmail.com</a></dd></div>
+        <div><dt>Documento</dt><dd class="mono">PT-SGSST-04 · v01</dd></div>
+      </dl>
+      <p class="legal">Versión web del Protocolo para la Prevención, Atención y Corrección del Acoso Laboral y Sexual de LOGIGHO S.A.S., Sistema de Gestión de Seguridad y Salud en el Trabajo. El texto de las secciones reproduce el documento aprobado; el índice, el buscador, los botones de contacto y la tabla comparativa de comités son ayudas de lectura añadidas en esta edición y no modifican el protocolo.</p>
+    </div>
+    <div class="pie-art" aria-hidden="true">
+      <svg viewBox="0 0 250 200" preserveAspectRatio="xMidYMax meet">
+        <use href="#m-corto" x="0"   y="34" width="76" height="166" fill="var(--sil-3)" fill-opacity=".6"/>
+        <use href="#m-rizos" x="160" y="30" width="78" height="170" fill="var(--sil-3)" fill-opacity=".6"/>
+        <use href="#m-mono"  x="52"  y="6"  width="89" height="194" fill="var(--sil-1)" fill-opacity=".85"/>
+        <use href="#m-cola"  x="108" y="14" width="86" height="186" fill="var(--sil-2)"/>
+      </svg>
+    </div>
+  </div>
+</footer>
+
+<div class="flot">
+  <a class="b b-main" id="ayudaBtn" href="#ayuda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.2C1 8.3 3.2 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.7 0 5.9 3.8 4.4 7.3C19.5 16.4 12 21 12 21Z"/></svg>Pedir ayuda</a>
+  <button id="topBtn" type="button" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var $ = function(id){ return document.getElementById(id); };
+  var q = $('q'), count = $('count'), countTxt = $('countTxt'), clearQ = $('clearQ');
+  var bar = $('bar'), rail = $('rail'), idxBtn = $('idxBtn'), ayudaBtn = $('ayudaBtn'), topBtn = $('topBtn');
+  var hero = document.querySelector('.hero'), ayuda = $('ayuda');
+  var links = Array.prototype.slice.call(document.querySelectorAll('#toc a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+
+  /* Índice móvil */
+  function closeRail(){ rail.classList.remove('open'); idxBtn.setAttribute('aria-expanded','false'); idxBtn.textContent = 'Índice'; }
+  idxBtn.addEventListener('click', function(){
+    var open = rail.classList.toggle('open');
+    idxBtn.setAttribute('aria-expanded', String(open));
+    idxBtn.textContent = open ? 'Cerrar' : 'Índice';
+  });
+  rail.addEventListener('click', function(e){ if(e.target.closest('a') && rail.classList.contains('open')) closeRail(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && rail.classList.contains('open')) closeRail(); });
+
+  /* Progreso, sección activa y botones flotantes */
+  var ticking = false;
+  function update(){
+    ticking = false;
+    var doc = document.documentElement, y = window.scrollY || doc.scrollTop;
+    var max = doc.scrollHeight - doc.clientHeight;
+    bar.style.width = (max > 0 ? y / max * 100 : 0) + '%';
+
+    var heroBottom = hero.getBoundingClientRect().bottom;
+    var r = ayuda.getBoundingClientRect();
+    var ayudaVisible = r.top < window.innerHeight && r.bottom > 0 && !ayuda.closest('.hide');
+    ayudaBtn.classList.toggle('show', heroBottom < 0 && !ayudaVisible);
+    topBtn.classList.toggle('show', y > 1200);
+
+    var active = -1, line = 150;
+    for(var i = 0; i < targets.length; i++){
+      var t = targets[i];
+      if(!t || t.offsetParent === null) continue;
+      if(t.getBoundingClientRect().top <= line) active = i; else break;
+    }
+    links.forEach(function(a, i){ a.classList.toggle('on', i === active); });
+  }
+  function onScroll(){ if(!ticking){ ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  update();
+  topBtn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  /* Buscador */
+  function norm(s){ return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  var blocks = Array.prototype.slice.call(document.querySelectorAll('.blk'));
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.grupo'));
+  var intro  = Array.prototype.slice.call(document.querySelectorAll('main > .top'));
+  blocks.forEach(function(b){ b.dataset.hay = norm(b.textContent); });
+
+  var timer = null;
+  function run(){
+    var raw = q.value.trim(), term = norm(raw);
+    if(term.length < 2){
+      blocks.concat(groups, intro).forEach(function(el){ el.classList.remove('hide'); });
+      count.classList.remove('show');
+      onScroll();
+      return;
+    }
+    var hits = 0;
+    blocks.forEach(function(b){
+      var ok = b.dataset.hay.indexOf(term) !== -1;
+      b.classList.toggle('hide', !ok);
+      if(ok) hits++;
+    });
+    groups.forEach(function(g){ g.classList.toggle('hide', !g.querySelector('.blk:not(.hide)')); });
+    intro.forEach(function(el){ el.classList.add('hide'); });
+    countTxt.textContent = hits === 0
+      ? 'Sin resultados para “' + raw + '”. Prueba con otra palabra.'
+      : hits + (hits === 1 ? ' sección encontrada' : ' secciones encontradas') + ' para “' + raw + '”';
+    count.classList.add('show');
+    onScroll();
+  }
+  q.addEventListener('input', function(){ clearTimeout(timer); timer = setTimeout(run, 140); });
+  q.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ q.value = ''; run(); } });
+  clearQ.addEventListener('click', function(){ q.value = ''; run(); q.focus(); });
+  document.addEventListener('keydown', function(e){
+    var tag = document.activeElement && document.activeElement.tagName;
+    if(e.key === '/' && tag !== 'INPUT' && tag !== 'TEXTAREA'){ e.preventDefault(); q.focus(); }
+  });
+
+  /* Si un enlace lleva a algo oculto por la búsqueda, limpiarla primero */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="#"]');
+    if(!a || a.getAttribute('href').length < 2) return;
+    var t = document.querySelector(a.getAttribute('href'));
+    if(t && (t.classList.contains('hide') || t.closest('.hide'))){ q.value = ''; run(); }
+  });
+})();
+</script>
+
+</body>
+</html>
